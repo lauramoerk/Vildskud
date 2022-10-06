@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .container {
+        width: 100%;
+        overflow: hidden;
+        margin: 50px auto;
+      }
+      
+      ul {
+        list-style: none;
+      }
+      
+
+      
+      .box {
+        display: inline-block;
+        margin: 0.5rem;
+        padding: 0;
+        color:#FFFF;
+        border-radius:50px;
+      }
+      
+      /*keyframe animations*/
+       .box:first-child {
+        animation: bannermove 60s linear infinite;
+      } 
+      
+      @keyframes "bannermove" {
+       0% {
+        margin-left: 0px;
+        transform: translateX(0);
+       }
+       100% {
+          margin-left: -2125px;
+       }
+      
+      }
+}
