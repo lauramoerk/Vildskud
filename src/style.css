@@ -5,17 +5,15 @@
 @layer components{
     .container {
         width: 100%;
-        overflow: hidden;
-        margin: 50px auto;
+
       }
       
       ul {
         list-style: none;
       }
       
-
       
-      .box {
+      .scrollbox{
         display: inline-block;
         margin: 0.5rem;
         padding: 0;
@@ -24,11 +22,11 @@
       }
       
       /*keyframe animations*/
-       .box:first-child {
+       .scrollbox:first-child {
         animation: bannermove 60s linear infinite;
       } 
-      
-      @keyframes "bannermove" {
+
+   @keyframes bannermove {
        0% {
         margin-left: 0px;
         transform: translateX(0);
@@ -37,5 +35,7 @@
           margin-left: -2125px;
        }
       
-      }
-}
+      }   
+
+}      
+
