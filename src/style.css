@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer components{
-    .container {
+    /* .container {
         width: 100%;
 
       }
@@ -22,20 +22,29 @@
       }
       
       /*keyframe animations*/
-       .scrollbox:first-child {
-        animation: bannermove 60s linear infinite;
-      } 
+       /* ul li:first-child {
+        animation: bannermove 60s linear infinite ;
+      }  */ 
 
-   @keyframes bannermove {
-       0% {
-        margin-left: 0px;
-        transform: translateX(0);
-       }
-       100% {
-          margin-left: -2125px;
-       }
+      .container {
+        overflow: hidden;
+      }
       
-      }   
+      .sliding-background {
+        background: url("..path/to/image") repeat-x;
+        animation: slide 60s linear infinite;
+      }
+      
+      @keyframes slide{
+        0% {
+          transform: translate3d(0, 0, 0);
+        }
+        100% {
+          transform: translate3d(-1692px, 0, 0);
+        }
+      }
+
+
 
 }      
 
