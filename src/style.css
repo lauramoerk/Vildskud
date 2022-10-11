@@ -18,6 +18,7 @@
         width: 5076px;
         animation: slide 60s linear infinite;
       }
+
       
       @keyframes slide{
         0% {
