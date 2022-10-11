@@ -5,116 +5,572 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
-<link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    
-
-  <div class="navbar bg-navcolor p-4 ">
-    <div class="navbar-start">
-      <div class="dropdown">
-        <label tabindex="0" class="btn btn-ghost lg:hidden">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-5 w-5"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
+  <body class="bg-bgcolor">
+    <div class="navbar bg-navcolor p-4">
+      <div class="navbar flex justify-between">
+        <a href="./index.html" class="btn btn-ghost text-xl normal-case"
+          ><img
+            class="h-auto w-[100px] md:w-[120px]"
+            src="./img/logo/Asset 2.svg"
+            alt="logo"
+        /></a>
+        <div class="dropdown">
+          <label tabindex="0" class="btn btn-ghost lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h8m-8 6h16"
+              />
+            </svg>
+          </label>
+          <ul
+            tabindex="0"
+            class="dropdown-content menu rounded-box menu-compact right-1 mt-3 w-52 bg-navcolor p-2 shadow"
           >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M4 6h16M4 12h8m-8 6h16"
-            />
-          </svg>
-        </label>
-        <ul
-          tabindex="0"
-          class="dropdown-content menu rounded-box menu-compact mt-3 w-52 bg-navcolor p-2 shadow"
-        >
-          <li><a href="./programoversigt.html" class="font-urbanist">Programoversigt</a></li>
-          <li><a href="./forestillinger.html" class="font-urbanist">Forestillinger</a></li>
-          <li><a href="./events.html" class="font-urbanist">Events</a></li>
-          <li><a href="./omos.html" class="font-urbanist">Om os</a></li>
+            <li>
+              <a href="./programoversigt.html" class="font-urbanist"
+                >Programoversigt</a
+              >
+            </li>
+            <li>
+              <a href="./forestillinger.html" class="font-urbanist"
+                >Forestillinger</a
+              >
+            </li>
+            <li><a href="./events.html" class="font-urbanist">Events</a></li>
+            <li><a href="./omos.html" class="font-urbanist">Om os</a></li>
+            <li>
+              <a href="./omos.html" class="font-urbanist">Køb billetter</a>
+            </li>
+            <li tabindex="0">
+              <a class="justify-between font-urbanist">
+                Ansøg
+                <svg
+                  class="fill-current"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"
+                  />
+                </svg>
+              </a>
+              <ul class="bg-navcolor p-2">
+                <li>
+                  <a href="./frivillige.html" class="font-urbanist"
+                    >Frivillige</a
+                  >
+                </li>
+                <li>
+                  <a href="./opencall.html" class="font-urbanist">Open Call</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="navbar-center hidden justify-evenly lg:flex">
+        <ul class="menu menu-horizontal p-0">
+          <li>
+            <a class="font-urbanist" href="./programoversigt.html"
+              >Programoversigt</a
+            >
+          </li>
+          <li>
+            <a class="font-urbanist" href="./forestillinger.html"
+              >Forestillinger</a
+            >
+          </li>
+          <li><a class="font-urbanist" href="./events.html">Events</a></li>
+          <li><a class="font-urbanist" href="./omos.html">Om os</a></li>
           <li tabindex="0">
-            <a class="justify-between font-urbanist">
+            <a class="font-urbanist">
               Ansøg
               <svg
                 class="fill-current"
                 xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
+                width="20"
+                height="20"
                 viewBox="0 0 24 24"
               >
                 <path
-                  d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"
+                  d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
                 />
               </svg>
             </a>
-            <ul class="p-2 bg-navcolor">
-              <li><a href="./frivillige.html" class="font-urbanist">Frivillige</a></li>
-              <li><a href="./opencall.html" class="font-urbanist">Open Call</a></li>
+            <ul class="bg-navcolor p-2">
+              <li>
+                <a class="font-urbanist" href="./frivillige.html">Frivillige</a>
+              </li>
+              <li>
+                <a class="font-urbanist" href="./opencall.html">Open Call</a>
+              </li>
             </ul>
           </li>
         </ul>
       </div>
-      <a href="./index.html" class="btn btn-ghost text-xl normal-case"
-        ><img
-          class="h-auto w-[100px] md:w-[120px]"
-          src="./img/logo/Asset 2.svg"
-          alt="logo"
-      /></a>
+      <div class="navbar-end hidden lg:inline-block  lg:self-end">
+        <a
+          class="btn w-1/3 rounded-md border-2 border-solid border-accent bg-transparent p-2 py-0 font-custard text-sm text-accent hover:bg-accent hover:text-navcolor md:px-10 md:text-lg"
+          >KØB BILLETTER</a
+        >
+      </div>
     </div>
-    <div class="navbar-center hidden justify-evenly lg:flex">
-      <ul class="menu menu-horizontal p-0">
-        <li>
-          <a class="font-urbanist" href="./programoversigt.html"
-            >Programoversigt</a
-          >
-        </li>
-        <li>
-          <a class="font-urbanist" href="./forestillinger.html"
-            >Forestillinger</a
-          >
-        </li>
-        <li><a class="font-urbanist" href="./events.html">Events</a></li>
-        <li><a class="font-urbanist" href="./omos.html">Om os</a></li>
-        <li tabindex="0">
-          <a class="font-urbanist">
-            Ansøg
-            <svg
-              class="fill-current"
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
-              />
-            </svg>
-          </a>
-          <ul class="p-2 bg-navcolor">
-            <li>
-              <a class="font-urbanist" href="./frivillige.html">Frivillige</a>
-            </li>
-            <li>
-              <a class="font-urbanist" href="./opencall.html">Open Call</a>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-    <div class="navbar-end">
-      <a
-        class="btn rounded-md border-2 border-solid border-accent bg-transparent p-2 md:px-10 py-0 font-custard text-sm md:text-lg text-accent hover:bg-accent hover:text-navcolor"
-        >KØB BILLETTER</a
+    <h1 class="flex justify-center pt-11 font-custard text-4xl md:text-7xl">
+      Om Vildskud
+    </h1>
+    <div>
+      <div
+        class="flex flex-col items-center justify-center pt-8 sm:mx-11 sm:flex-row sm:gap-5 md:justify-evenly"
       >
+        <div class="flex w-56 justify-center self-center sm:w-96 md:w-1/2">
+          <picture>
+            <source
+              class="w-96"
+              srcset="img/avif/event-vildskud.avif"
+              type="image/avif"
+            />
+            <img
+              class="w-96"
+              src="img/webp/event-vildskud.webp"
+              alt="forfatter"
+            />
+          </picture>
+        </div>
+        <div class="flex w-1/2 flex-col items-center justify-center">
+          <h2
+            class="self-start pt-11 font-custard text-2xl sm:text-4xl md:pl-8 md:text-5xl"
+          >
+            Hvad
+          </h2>
+          <p class="font-urbanist md:mx-8">
+            Vildskud er Københavns festival for uafhængig scenekunst. Vær med,
+            se med. Vildskud er for alle der er interesserede i at dyrke og
+            støtte spirende og uafhængige scenekunstnere.
+          </p>
+        </div>
+      </div>
+      <div>
+        <h2
+          class="mx-11 self-start pt-11 pb-8 font-custard text-2xl sm:text-4xl md:pl-11 md:text-5xl"
+        >
+          Vores Team
+        </h2>
+        <div class="mx-5 grid grid-cols-2 gap-5 sm:grid-cols-3 md:grid-cols-6">
+          <div>
+            <div class="flex justify-center">
+              <picture class="relative flex justify-center">
+                <source
+                  class="absolute flex w-3/4 justify-self-center"
+                  srcset="img/avif/nikita.avif"
+                  type="image/avif"
+                />
+                <img
+                  class="w-3/4 justify-self-center"
+                  src="img/webp/nikita.webp"
+                  alt="nikita"
+                />
+              </picture>
+            </div>
+            <div class="md:mx-11">
+              <h3 class="pt-5 pb-2 text-center font-urbanist font-bold">
+                Nikita Fernando
+              </h3>
+              <p class="pb-2 text-center text-sm">
+                Projektleder og gruppeansvarlig
+              </p>
+              <p class="text-2xs text-center text-primary">
+                info@vildskud.dk // grupper@vildskud.dk
+              </p>
+            </div>
+          </div>
+          <div>
+            <div class="flex justify-center">
+              <picture class="relative flex justify-center">
+                <source
+                  class="absolute flex w-3/4 justify-self-center"
+                  srcset="img/avif/team-kirstine.avif"
+                  type="image/avif"
+                />
+                <img
+                  class="w-3/4 justify-self-center"
+                  src="img/webp/team-kirstine.webp"
+                  alt="kirstine"
+                />
+              </picture>
+            </div>
+            <div class="md:mx-11">
+              <h3 class="pt-5 pb-2 text-center font-urbanist font-bold">
+                Kirstine Aabel Eigtved
+              </h3>
+              <p class="pb-2 text-center text-sm">Blæksprutte & presse</p>
+              <p class="text-2xs text-center text-primary">info@vildskud.dk</p>
+            </div>
+          </div>
+          <div>
+            <div class="flex justify-center">
+              <picture class="relative flex justify-center">
+                <source
+                  class="absolute flex w-3/4 justify-self-center"
+                  srcset="img/avif/team-vibeke.avif"
+                  type="image/avif"
+                />
+                <img
+                  class="w-3/4 justify-self-center"
+                  src="img/webp/team-vibeke.webp"
+                  alt="Vibeke"
+                />
+              </picture>
+            </div>
+            <div class="md:mx-11">
+              <h3 class="pt-5 pb-2 text-center font-urbanist font-bold">
+                Vibeke Blindbæk
+              </h3>
+              <p class="pb-2 text-center text-sm">Pr, medier og presse</p>
+              <p class="text-2xs text-center text-primary">info@vildskud.dk</p>
+            </div>
+          </div>
+          <div>
+            <div class="flex justify-center">
+              <picture class="relative flex justify-center">
+                <source
+                  class="absolute flex w-3/4 justify-self-center"
+                  srcset="img/avif/team-stina.avif"
+                  type="image/avif"
+                />
+                <img
+                  class="w-3/4 justify-self-center"
+                  src="img/webp/team-stina.webp"
+                  alt="stina"
+                />
+              </picture>
+            </div>
+            <div class="md:mx-11">
+              <h3 class="pt-5 pb-2 text-center font-urbanist font-bold">
+                Stina Hyllested Volf
+              </h3>
+              <p class="pb-2 text-center text-sm">Blæksprutte</p>
+              <p class="text-2xs text-center text-primary">
+                progpresse@vildskud.dk
+              </p>
+            </div>
+          </div>
+          <div>
+            <div class="flex justify-center">
+              <picture class="relative flex justify-center">
+                <source
+                  class="absolute flex w-3/4 justify-self-center"
+                  srcset="img/avif/team-louise.avif"
+                  type="image/avif"
+                />
+                <img
+                  class="w-3/4 justify-self-center"
+                  src="img/webp/team-louise.webp"
+                  alt="louise"
+                />
+              </picture>
+            </div>
+            <div class="md:mx-11">
+              <h3 class="pt-5 pb-2 text-center font-urbanist font-bold">
+                Louise Leth Feldthus
+              </h3>
+              <p class="pb-2 text-center text-sm">
+                Juryansvarlig og Billetansvarlig
+              </p>
+              <p class="text-2xs text-center text-primary">
+                billet@vildskud.com
+              </p>
+            </div>
+          </div>
+          <div>
+            <div class="flex justify-center">
+              <picture class="relative flex justify-center">
+                <source
+                  class="absolute flex w-3/4 justify-self-center"
+                  srcset="img/avif/team-baldrian.avif"
+                  type="image/avif"
+                />
+                <img
+                  class="w-3/4 justify-self-center"
+                  src="img/webp/team-baldrian.webp"
+                  alt="team-baldrian"
+                />
+              </picture>
+            </div>
+            <div class="md:mx-11">
+              <h3 class="pt-5 pb-2 text-center font-urbanist font-bold">
+                Baldrian Sector
+              </h3>
+              <p class="pb-2 text-center text-sm">Cheftekniker</p>
+              <p class="text-2xs text-center text-primary">
+                teknik@vildskud.dk
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
+    <div
+      class="flex flex-col items-center pt-11 sm:flex-row sm:items-start md:flex-row md:justify-evenly"
+    >
+      <div class="w-2/3 md:w-1/3">
+        <h2
+          class="mx-11 self-start pt-11 pb-8 font-custard text-3xl sm:text-4xl md:pl-11 md:text-5xl"
+        >
+          Samarbejdspartnere
+        </h2>
+        <div class="mx-8 grid grid-cols-1 gap-7 md:grid-cols-2">
+          <div>
+            <picture class="relative flex justify-center">
+              <source
+                class="absolute flex w-3/4 justify-self-center"
+                srcset="img/avif/spons-dats2.avif"
+                type="image/avif"
+              />
+              <img
+                class="w-3/4 max-w-[150px] justify-self-center"
+                src="img/webp/spons-dats2.webp"
+                alt="dats"
+              />
+            </picture>
+          </div>
+          <div>
+            <picture class="relative flex justify-center">
+              <source
+                class="absolute flex w-3/4 justify-self-center"
+                srcset="img/avif/spons-fdd.avif"
+                type="image/avif"
+              />
+              <img
+                class="w-3/4 max-w-[150px] justify-self-center"
+                src="img/webp/spons-fdd.webp"
+                alt="fdd"
+              />
+            </picture>
+          </div>
 
+          <div>
+            <picture class="relative flex justify-center">
+              <source
+                class="absolute flex w-3/4 justify-self-center"
+                srcset="img/avif/spons-nordea-fonden.avif"
+                type="image/avif"
+              />
+              <img
+                class="w-3/4 max-w-[150px] justify-self-center"
+                src="img/webp/spons-nordea-fonden.webp"
+                alt="nordea fonden"
+              />
+            </picture>
+          </div>
+          <div>
+            <picture class="relative flex justify-center">
+              <source
+                class="absolute flex w-3/4 justify-self-center"
+                srcset="img/avif/spons-teaterrepublique.avif"
+                type="image/avif"
+              />
+              <img
+                class="w-3/4 max-w-[150px] justify-self-center"
+                src="img/webp/spons-teaterrepublique.webp"
+                alt="teater republique"
+              />
+            </picture>
+          </div>
+          <div>
+            <picture class="relative flex justify-center">
+              <source
+                class="absolute flex w-3/4 justify-self-center"
+                srcset="img/avif/spons-kbhkommune.avif"
+                type="image/avif"
+              />
+              <img
+                class="w-3/4 max-w-[150px] justify-self-center"
+                src="img/webp/spons-kbhkommune.webp"
+                alt="kbhkommune"
+              />
+            </picture>
+          </div>
+        </div>
+      </div>
+      <div class="w-2/3 md:w-1/3">
+        <h2
+          class="mx-11 flex self-start pt-11 pb-8 font-custard text-3xl sm:text-4xl md:pl-11 md:text-5xl"
+        >
+          Venues
+        </h2>
+        <div class="mx-8 grid grid-cols-1 gap-7 md:grid-cols-2">
+          <div>
+            <picture class="relative flex justify-center">
+              <source
+                class="absolute flex w-3/4 justify-self-center"
+                srcset="img/avif/venue-downuder.avif"
+                type="image/avif"
+              />
+              <img
+                class="w-3/4 max-w-[150px] justify-self-center"
+                src="img/webp/venue-downuder.webp"
+                alt="downunder"
+              />
+            </picture>
+          </div>
+          <div>
+            <picture class="relative flex justify-center">
+              <source
+                class="absolute flex w-3/4 justify-self-center"
+                srcset="img/avif/venue-teaterhuset.avif"
+                type="image/avif"
+              />
+              <img
+                class="w-3/4 max-w-[150px] justify-self-center"
+                src="img/webp/venue-teaterhuset.webp"
+                alt="teaterhuset"
+              />
+            </picture>
+          </div>
+          <div>
+            <picture class="relative flex justify-center">
+              <source
+                class="absolute flex w-3/4 justify-self-center"
+                srcset="img/avif/venue-zebu.avif"
+                type="image/avif"
+              />
+              <img
+                class="w-3/4 max-w-[150px] justify-self-center"
+                src="img/webp/venue-zebu.webp"
+                alt="zebu"
+              />
+            </picture>
+          </div>
+          <div>
+            <picture class="relative flex justify-center">
+              <source
+                class="absolute flex w-3/4 justify-self-center"
+                srcset="img/avif/venue-teaterv.avif"
+                type="image/avif"
+              />
+              <img
+                class="w-3/4 max-w-[150px] justify-self-center"
+                src="img/webp/venue-teaterv.webp"
+                alt="teaterv"
+              />
+            </picture>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- contact -->
+    <div class="max-w-[450px] md:max-w-full mt-8 flex flex-col md:flex-row justify-center">
+      <div class="md:w-1/2">
+        <h2
+          class="mx-11 flex self-start pt-11 pb-8 font-custard text-3xl sm:text-4xl md:pl-11 md:text-5xl"
+        >
+          Kontakt
+        </h2>
+        <div class="ml-11 sm:ml-20 max-w-[300px]">
+          <p class="pb-4">Hejsa!</p>
+          <p class="pb-2">
+            Har du spørgsmål vedr. frivilligt arbejde, hvad det vil sige at være
+            samarbejdspartner med Vildskud, om at spille på festivalen, eller vil
+            du bare sige hej?
+          </p>
+          <p class="pb-2">
+            Så send en besked til Vildskud-temaet ved hjælp af kontaktformularen.
+          </p>
+          <p class="pb-2">
+            Hvis du er på udkig efter en bestemt person/rolle i teamet, kan du
+            også tage et kig på vores “teamet bag” side.
+          </p>
+        </div>
+      </div>
+      <!-- formular -->
+      <div class="flex flex-col items-center md:items-start md:w-1/2 md:max-w-[450px]">
+        <div class="px-10 py-10 flex flex-col w-full ">
+          <label class="text-lg font-medium" for="name"
+            >Dit navn (skal udfyldes)</label
+          >
+
+          <input
+            class="w-full border-none bg-white text-stone-500  focus:ring-orange-500"
+            type="text"
+            placeholder="Mit navn er..."
+            id="name"
+            name="name"
+            required
+            minlength="2"
+            maxlength="20"
+            size="10"
+          />
+        </div>
+        <div class="px-10 py-5 flex flex-col w-full">
+          <label class="text-lg font-medium" for="email"
+            >Din e-mail (skal udfyldes)</label
+          >
+
+          <input
+            class="w-full border-none bg-white text-stone-500 focus:ring-orange-500"
+            type="text"
+            placeholder="eksempel@gmail.com"
+            id="email"
+            name="email"
+            required
+            minlength="2"
+            maxlength="20"
+            size="10"
+          />
+        </div>
+        <div class="px-10 py-5 flex flex-col w-full">
+          <label class="text-lg font-medium" for="topic">Emne</label>
+
+          <input
+            class="w-full border-none bg-white text-stone-500 focus:ring-orange-500"
+            type="text"
+            placeholder="Min besked handler om..."
+            id="topic"
+            name="topic"
+            minlength="2"
+            maxlength="20"
+            size="10"
+          />
+        </div>
+        <div class="px-10 pt-5 flex flex-col w-full">
+          <label class="text-lg font-medium" for="message"
+            >Din besked (maks 250 tegn)</label
+          >
+
+          <form>
+            <textarea
+              class="w-full border-none bg-white text-stone-500 focus:ring-orange-500"
+              type="text"
+              placeholder="Skriv din besked her..."
+              id="textbox"
+              name="message"
+              rows="10"
+              cols="60"
+            ></textarea>
+            <!-- minlength="2"
+              maxlength="250" size="10"
+            Denne function virker ikke, øv -->
+            <span id="char_count">250/250</span>
+          </form>
+        </div>
+        <button class="border-2 border-accent py-2 my-2 px-4 md:p-4 rounded-md font-custard uppercase md:text-2xl text-accent md:mt-7 md:w-40 md:py-1 flex justify-center self-center " type="submit">Send besked</button>
+        
+      </div>
+    </div>
   </body>
   <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
+  <script type="module" src="./main.js"></script>
 </html>
