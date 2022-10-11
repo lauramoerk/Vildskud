@@ -1,5 +1,4 @@
 import "./style.css";
-import { animate, stagger, inView, scroll, timeline } from "motion";
 
 const textArea = document.getElementById("textbox");
 const characterCounter = document.getElementById("char_count");
