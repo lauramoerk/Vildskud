@@ -7,7 +7,7 @@
     <script defer src="https://unpkg.com/alpinejs@3.10.4/dist/cdn.min.js"></script>
     <title>Vite App</title>
   </head>
-  <body class="grid place-items-center p-8">
+  <body class="grid place-items-center bg-bgcolor">
     <div class="navbar bg-navcolor p-4">
       <div class="navbar-start">
         <div class="dropdown">
@@ -111,15 +111,14 @@
         >
       </div>
     </div>
-    <main class="p-8" id="step" x-data="{ spilledag: 'alledage', spillested: 'allevenues', skjulteforestillinger : 0 }">
+    <main class="p-8 " id="step" x-data="{ spilledag: 'alledage', spillested: 'allevenues', skjulteforestillinger : 0 }">
 
       <header class="border-b border-slate-500 pt-4 pb-8">
         <form id="filtre" class="flex">
           
-        <div class="mb-4 mr-4">
-        <label for="spilledag">Dato:</label>
-        <select name="spilledag" id="spilledag" x-model="spilledag" form="filtre" x-on:change="$nextTick(() => { ingenforestillinger() });">
-         
+        <div class="mb-4 mr-4 ">
+        <label for="spilledag ">Dato:</label>
+        <select class="bg-bgcolor" name="spilledag"  id="spilledag" x-model="spilledag" form="filtre" x-on:change="$nextTick(() => { ingenforestillinger() });">
           <option value="alledage">Alle dage</option>
           <option value="tirsdag">Tirsdag</option>
           <option value="onsdag">Onsdag</option>
@@ -131,7 +130,7 @@
 
       <div>
       <label for="spillested">Venue:</label>
-      <select name="spillested" id="spillested" x-model="spillested" form="filtre" x-on:change="$nextTick(() => { ingenforestillinger() });">
+      <select class="bg-bgcolor" name="spillested" id="spillested" x-model="spillested" form="filtre" x-on:change="$nextTick(() => { ingenforestillinger() });">
         <option value="allevenues">Alle venues</option>
         <option value="vox">Vox</option>
         <option value="downunder">Downunder</option>
@@ -143,7 +142,7 @@
         </form>
       </header>
 
-      <section class="forestillinger grid grid-cols-1 md:grid-cols-2">
+      <section class="forestillinger grid grid-cols-1 md:grid-cols-2 md:gap-x-40 lg:gap-x-80">
 
        
      
@@ -334,7 +333,7 @@
     
       </section>
 
-      <footer>&copy; 2022</footer>
+    
 
       <script>
       function ingenforestillinger(){
