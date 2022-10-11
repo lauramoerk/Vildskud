@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="https://unpkg.com/alpinejs@3.10.4/dist/cdn.min.js"></script>
+    <title>Vite App</title>
+    <script type="module" crossorigin src="./assets/main.c6a7e561.js"></script>
+    <link rel="stylesheet" href="./assets/style.05521a58.css">
+  </head>
+  <body class="grid place-items-center bg-bgcolor">
+    <div class="navbar bg-navcolor p-4">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <label tabindex="0" class="btn btn-ghost lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h8m-8 6h16"
+              />
+            </svg>
+          </label>
+          <ul
+            tabindex="0"
+            class="dropdown-content menu rounded-box menu-compact mt-3 w-52 bg-navcolor p-2 shadow"
+          >
+            <li><a href="/programoversigt.html" class="font-urbanist">Programoversigt</a></li>
+            <li><a href="/forestillinger.html" class="font-urbanist">Forestillinger</a></li>
+            <li><a href="/events.html" class="font-urbanist">Events</a></li>
+            <li><a href="/omos.html" class="font-urbanist">Om os</a></li>
+            <li tabindex="0">
+              <a class="justify-between font-urbanist">
+                Ansøg
+                <svg
+                  class="fill-current"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"
+                  />
+                </svg>
+              </a>
+              <ul class="p-2 bg-navcolor">
+                <li><a href="frivillige.html" class="font-urbanist">Frivillige</a></li>
+                <li><a href="opencall.html" class="font-urbanist">Open Call</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <a href="./index.html" class="btn btn-ghost text-xl normal-case"
+          ><img
+            class="h-auto w-[100px] md:w-[120px]"
+            src="./assets/Asset 2.0420bdc5.svg"
+            alt="logo"
+        /></a>
+      </div>
+      <div class="navbar-center hidden justify-evenly lg:flex">
+        <ul class="menu menu-horizontal p-0">
+          <li>
+            <a class="font-urbanist" href="./programoversigt.html"
+              >Programoversigt</a
+            >
+          </li>
+          <li>
+            <a class="font-urbanist" href="./forestillinger.html"
+              >Forestillinger</a
+            >
+          </li>
+          <li><a class="font-urbanist" href="./events.html">Events</a></li>
+          <li><a class="font-urbanist" href="./omos.html">Om os</a></li>
+          <li tabindex="0">
+            <a class="font-urbanist">
+              Ansøg
+              <svg
+                class="fill-current"
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
+                />
+              </svg>
+            </a>
+            <ul class="p-2 bg-navcolor">
+              <li>
+                <a class="font-urbanist" href="./frivillige.html">Frivillige</a>
+              </li>
+              <li>
+                <a class="font-urbanist" href="./opencall.html">Open Call</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <a
+          class="btn rounded-md border-2 border-solid border-accent bg-transparent p-2 md:px-10 py-0 font-custard text-sm md:text-lg text-accent hover:bg-accent hover:text-navcolor"
+          >KØB BILLETTER</a
+        >
+      </div>
+    </div>
+    <main class="p-8 " id="step" x-data="{ spilledag: 'alledage', spillested: 'allevenues', skjulteforestillinger : 0 }">
+
+      <header class="border-b border-slate-500 pt-4 pb-8">
+        <form id="filtre" class="flex">
+          
+        <div class="mb-4 mr-4 ">
+        <label for="spilledag ">Dato:</label>
+        <select class="bg-bgcolor" name="spilledag"  id="spilledag" x-model="spilledag" form="filtre" x-on:change="$nextTick(() => { ingenforestillinger() });">
+          <option value="alledage">Alle dage</option>
+          <option value="tirsdag">Tirsdag</option>
+          <option value="onsdag">Onsdag</option>
+          <option value="torsdag">Torsdag</option>
+          <option value="fredag">Fredag</option>
+          <option value="lordag">Lørdag</option>
+        </select> 
+      </div>
+
+      <div>
+      <label for="spillested">Venue:</label>
+      <select class="bg-bgcolor" name="spillested" id="spillested" x-model="spillested" form="filtre" x-on:change="$nextTick(() => { ingenforestillinger() });">
+        <option value="allevenues">Alle venues</option>
+        <option value="vox">Vox</option>
+        <option value="downunder">Downunder</option>
+        <option value="zebu">Zebu</option>
+        <option value="xenon">Xenon Teaterhuset</option>
+      </select> 
+    </div>
+
+        </form>
+      </header>
+
+      <section class="forestillinger grid grid-cols-1 md:grid-cols-2 md:gap-x-40 lg:gap-x-80">
+
+       
+     
+      <article class="forestilling p-3 flex flex-col  w-80" :class="{'hidden': !(['alledage', 'tirsdag', 'onsdag'].includes(spilledag) && ['allevenues', 'xenon'].includes(spillested)) }" x-transition:enter.duration.800ms  x-on:change="testfunction();">
+        <!-- x-show alternativ syntaks -->
+        <picture class="">
+          <source class="w-80"
+            srcset="./assets/gogoyoyoku.a45bf578.avif "
+            type="image/avif"
+          />
+          <img
+            class=" w-80"
+            src="./assets/gogoyoyoku.2e262852.webp"
+            alt="event-crowd"
+          />
+        </picture>
+        <h3 class="font-custard text-2xl ">Go Go Yo-Yoku</h3>
+        <p class="font-bold font-urbanist">4. aug. 16:45 & 20:15, 5. aug. 16:30</p>
+        <a class="text-accent underline underline-offset-2 font-semibold font-urbanist" href="#">Reserver</a>
+        <p class="">En forestilling af KOPFKINO. Find din yoyo frem og sæt dig selv fri i en skov. Det går godt for de tre roomies med at dele lejlighed, men kæft det går dårligt med at være mennesker i en nulfejlskultur, hvor alt handler om meritter og milepælsplaner. 
+          Rakel er blevet droppet af sin eks, Lua kommer bare aldrig videre til prøverne på Skuespillerskolen og Skjold dater alarmerende uhyggeligt meget. Ikke flere undvigemanøvre for at blive stemplet som fiasko. Ikke flere hvide løgne for at være bedre end man er. 
+          Ikke mere pleaser-pis for at rykke op i sit selvskabte hierarki. Ud med skam og ind med sandhed. Med inspiration i Shinrin-Yoku, anti-happy-go-lucky-mentalitet, vigtige venner og svære erkendelser tager Teater Kopfkino os med på en komisk dannelsesrejse midt i bøvlede livsprocesser. 
+          <br>
+          <br></p>
+          <p class="text-xs"> <span class="font-bold"> Instruktør:</span> August Aabo </p>
+          <p class="text-xs"> <span class="font-bold"> Skuespillere:</span>  Ann Celina Fønsskov, Sally Klie & Luca Storm </p>
+          <p class="text-xs"> <span class="font-bold"> Tekniker:</span>  Niels Eske Juul Andersen</p>
+          <p class="text-xs"> <span class="font-bold"> Komponist:</span>  Simon Klie </p>
+          <p class="text-xs"> <span class="font-bold"> Lyrik:</span>  Musa Mijia </p>
+          <p class="text-xs"> <span class="font-bold"> Scenograf:</span>  Ida Sofie Larsen </p>
+          <p class="text-xs"> <span class="font-bold"> Fotograf:</span> Tenzin Olivia Gustenhoff & Liva Bech Holskov </p>
+          <p class="text-xs"> <span class="font-bold"> Konsulent:</span> Emil Christiansen</p>
+      </article>
+
+      <article class="forestilling p-3 flex flex-col  w-80" :class="{'hidden': !(['alledage', 'onsdag', 'torsdag'].includes(spilledag) && ['allevenues', 'vox'].includes(spillested)) }" x-transition:enter.duration.800ms  x-on:change="testfunction();">
+        <!-- x-show alternativ syntaks -->
+        <picture class="">
+          <source class="w-80"
+            srcset="./assets/mandliggersommandharredt.3a26ea23.avif "
+            type="image/avif"
+          />
+          <img
+            class=" w-80"
+            src="./assets/mandliggersommandharredt.ea119e03.webp"
+            alt="event-crowd"
+          />
+        </picture>
+        <h3 class="font-custard text-2xl ">Mand ligger som mand har redt</h3>
+        <p class="font-bold font-urbanist">5. aug. 19:15, 6. aug. 13:00 & 17:30</p>
+        <a class="text-accent underline underline-offset-2 font-semibold font-urbanist" href="#">Reserver</a>
+        <p class="">En forestilling af Kill Your Darlings Hvad sker der mellem mænd når der ikke er andre til stede? Logen: Et sted hvor kun mænd er velkomne. 
+          Hvor mænd føler sig trygge, men også hvor alt er på spil, både for dem som individer og som gruppe. Et nyt medlem skal optages i logen og indvies i broderskabets fællesskab, ritualer og kutymer. 
+          Hierarki, skyld, tabu, magt og maskulinitet bliver sat på en spids i et rum, hvor alt er velkomment. Både de sarte og følsomme momenter, samt vold, druk og alt imellem.           
+          <br>
+          <br></p>
+          <p class="text-xs"> <span class="font-bold"> Instruktør:</span> Rasmus Kragh Hemmingsen,  </p>
+          <p class="text-xs"> <span class="font-bold"> Medinstruktør:</span>  Laura Reynberg Langkilde </p>
+          <p class="text-xs"> <span class="font-bold"> Kunstnerisk ledelse:</span>  Josefine Münster-Swendsen, Laura Reynberg Langkilde, Rasmus Kragh Hemmingsen Skuespillere Andreas Bitsch Lucas Da Costa Jørgensen, Malthe Heiberg, Mattias Valdemar Nielsen, Niels August Garly Andersen, Rasmus Grarup Elbo, Idé Bjørn Fonnesbech, Niels August Garly Andersen, Rasmus Kragh Hemmingsen Lys/lydtekniker Rasmus Lindahl Konsulent: Mia Lomholt Tvede.</p>
+      </article>
+
+      <article class="forestilling p-3 flex flex-col  w-80" :class="{'hidden': !(['alledage', 'tirsdag', 'onsdag'].includes(spilledag) && ['allevenues', 'vox'].includes(spillested)) }" x-transition:enter.duration.800ms  x-on:change="testfunction();">
+        <!-- x-show alternativ syntaks -->
+        <picture class="">
+          <source class="w-80"
+            srcset="./assets/mandliggersommandharredt.3a26ea23.avif "
+            type="image/avif"
+          />
+          <img
+            class=" w-80"
+            src="./assets/mandliggersommandharredt.ea119e03.webp"
+            alt="event-crowd"
+          />
+        </picture>
+        <h3 class="font-custard text-2xl ">Vild med mig</h3>
+        <p class="font-bold font-urbanist">2. aug. 18:30, 3. aug. 16:15 & 20:00</p>
+        <a class="text-accent underline underline-offset-2 font-semibold font-urbanist" href="#">Reserver</a>
+        <p class="">Forestilling af TEATER MANNEQUIN Velkommen! Til et univers i kærlighedens navn. Vi inviterer dig ind i en intim, musikalsk og glimtende undersøgelse af selvbilleder, kærlighed og higen efter at blive set, hørt og rørt. 
+          Vi tager dig i hånden og følger dig trygt igennem vores svar på livets store spørgsmål; er selvkærlighed løsningen på alle problemer? Havde din gymnasielærer ret, da hun sagde, du bare skulle stole mere på dig selv - så vil verden lægge sig for dine fødder?         
+          <br>
+          <br></p>
+          <p class="text-xs"> <span class="font-bold"> Medvirkende:</span>  Therese Maria Bilfeldt, Matilde Kjær Hilligsøe og Laura Alhed Nielsen Konsulent: Alberte M. H Jacobsen </p>
+      </article>
+
+      <article class="forestilling p-3 flex flex-col  w-80" :class="{'hidden': !(['alledage', 'lørdag', 'torsdag', 'fredag'].includes(spilledag) && ['allevenues', 'zebu'].includes(spillested)) }" x-transition:enter.duration.800ms  x-on:change="testfunction();">
+        <!-- x-show alternativ syntaks -->
+        <picture class="">
+          <source class="w-80"
+            srcset="./assets/mandliggersommandharredt.3a26ea23.avif "
+            type="image/avif"
+          />
+          <img
+            class=" w-80"
+            src="./assets/mandliggersommandharredt.ea119e03.webp"
+            alt="event-crowd"
+          />
+        </picture>
+        <h3 class="font-custard text-2xl ">Det levende rum</h3>
+        <p class="font-bold font-urbanist">4. aug. 18:30, 5. aug. 18:00, 6. aug. 12:45 & 16:15</p>
+        <a class="text-accent underline underline-offset-2 font-semibold font-urbanist" href="#">Reserver</a>
+        <p class="">En forestilling af Spræng Danseteater. I ‘Det Levende Rum’ møder vi de mennesker, der er blevet elimineret fra den utopiske verden ‘New Harmony’. 
+          De er alle syndige i at have brudt ‘New Harmony’s regler og normer for god opførsel. Sat uden for samfundet opdager de, at de er overladt til dem selv, at der ingen begrænsninger og konsekvenser er, ved at følge deres menneskelige drifter. 
+          Sproget forsvinder, og fysikken tager over. Velkommen til den store driftsfest!        
+          <br>
+          <br></p>
+          <p class="text-xs"> <span class="font-bold"> Medvirkende:</span>  Sarah Olivia Klitgaard, Karoline Gammelgaard Jensen , Helga Bach-Mortensen , Katrine Vedsø Jakobsen og Mollie Næss-Schmidt Konsulent: Mia Lomholt Tvede Med støtte fra: Snabslanten og DATS - Dansk Amatør Teater & Scenekunst</p>
+      </article>
+
+      <article class="forestilling p-3 flex flex-col  w-80" :class="{'hidden': !(['alledage', 'lørdag', 'fredag'].includes(spilledag) && ['allevenues', 'zebu'].includes(spillested)) }" x-transition:enter.duration.800ms  x-on:change="testfunction();">
+        <!-- x-show alternativ syntaks -->
+        <picture class="">
+          <source class="w-80"
+            srcset="./assets/frygtenforikkeatleve.5154e3c2.avif "
+            type="image/avif"
+          />
+          <img
+            class=" w-80"
+            src="./assets/frygtenforikkeatleve.6ff8ae62.webp"
+            alt="event-crowd"
+          />
+        </picture>
+        <h3 class="font-custard text-2xl ">Frygten for ikke at leve</h3>
+        <p class="font-bold font-urbanist">5. aug. 20:30, 6. aug. 12:30 & 14:45</p>
+        <a class="text-accent underline underline-offset-2 font-semibold font-urbanist" href="#">Reserver</a>
+        <p class="">En forestilling af JUNOS DISCIPLE I forestillingen “Frygten for ikke at leve” stiller vi os foran det spejl, der hedder Emilie Sannom. 
+          Emilie var berømt stuntkvinde og luftakrobat i 1920’ernes stumfilm. Hun var frygtløs - der var ingenting hun ikke turde. Hun var verdenskendt som filmens vovehals, mændenes overmand og luftens herskerinde. 
+          I et drømmeunivers undersøger vi mennesket uden frygt. Kan vi leve et helt liv, og aldrig blive bange? Kan vi give afkald på frygten, uden at give afkald på os selv? Hvor smal er linjen mellem drøm og mareridt? 
+          <br>
+          <br></p>
+          <p class="text-xs"> <span class="font-bold"> Medvirkende:</span>  Amanda Syhler, Barbara Campeotto, Xenia Winther, Anna Gohr, Kristina Freese, Christian Mondrup, Fie Schmidt og Sofie Øhrberg Lund Konsulent: Julie Mogensen</p>
+      </article>
+
+
+      <article class="forestilling p-3 flex flex-col  w-80" :class="{'hidden': !(['alledage', 'torsdag', 'fredag'].includes(spilledag) && ['allevenues', 'zebu'].includes(spillested)) }" x-transition:enter.duration.800ms  x-on:change="testfunction();">
+        <!-- x-show alternativ syntaks -->
+        <picture class="">
+          <source class="w-80"
+            srcset="./assets/whatfirestogetherwirestogether.9065d7a3.avif "
+            type="image/avif"
+          />
+          <img
+            class=" w-80"
+            src="./assets/whatfirestogetherwirestogether.78e396de.webp"
+            alt="event-crowd"
+          />
+        </picture>
+        <h3 class="font-custard text-2xl ">What fires together wires together</h3>
+        <p class="font-bold font-urbanist">4. aug. 18:30, 5. aug. 18:00, 6. aug. 12:45 & 16:15</p>
+        <a class="text-accent underline underline-offset-2 font-semibold font-urbanist" href="#">Reserver</a>
+        <p class="">En forestilling af Spræng Danseteater. I ‘Det Levende Rum’ møder vi de mennesker, der er blevet elimineret fra den utopiske verden ‘New Harmony’. 
+          De er alle syndige i at have brudt ‘New Harmony’s regler og normer for god opførsel. Sat uden for samfundet opdager de, at de er overladt til dem selv, at der ingen begrænsninger og konsekvenser er, ved at følge deres menneskelige drifter. 
+          Sproget forsvinder, og fysikken tager over. Velkommen til den store driftsfest! 
+          <br>
+          <br></p>
+          <p class="text-xs"> <span class="font-bold"> Medvirkende:</span>  Sarah Olivia Klitgaard, Karoline Gammelgaard Jensen , Helga Bach-Mortensen , Katrine Vedsø Jakobsen og Mollie Næss-Schmidt Konsulent: Mia Lomholt Tvede Med støtte fra: Snabslanten og DATS - Dansk Amatør Teater & Scenekunst</p>
+      </article>
+      
+      <article class="forestilling p-3 flex flex-col  w-80" :class="{'hidden': !(['alledage', 'torsdag', 'fredag'].includes(spilledag) && ['allevenues', 'downunder'].includes(spillested)) }" x-transition:enter.duration.800ms  x-on:change="testfunction();">
+        <!-- x-show alternativ syntaks -->
+        <picture class="">
+          <source class="w-80"
+            srcset="./assets/re-birth.e95a0fad.avif "
+            type="image/avif"
+          />
+          <img
+            class=" w-80"
+            src="./assets/re-birth.bff17f35.webp"
+            alt="event-crowd"
+          />
+        </picture>
+        <h3 class="font-custard text-2xl ">Re-birth</h3>
+        <p class="font-bold font-urbanist">4. aug. 15:00 & 18:15 & 20:15, 5. aug. 15:00 & 18:00 & 20:15</p>
+        <a class="text-accent underline underline-offset-2 font-semibold font-urbanist" href="#">Reserver</a>
+        <p class="">Forestilling af af Where is the rabbithole Året er 2222, vi er i et underjordisk genfødselskammer - et såkaldt SkaberLab - hvor mennesker bliver skabt og genskabt, for at kunne leve i århundreder. 
+          I forsøget på at løse forplantnings krisen, afskaffede vi den naturlige formering. Nu skabes mennesker af ufejlbart DNA, af en højteknologisk kult. 
+          Det perfekte menneske er alt. DNA’et er frit for sygdomme, men miljøet er stadig giftigt, så hvert 12. år genfødes mennesket i en fornyelsesproces kaldet: ’’RE-BIRTH’’. 
+          Bemærk: ønsker du at blive en aktiv del af ceremonien, så medbring et hårstrå. 
+          <br>
+          <br></p>
+          <p class="text-xs"> <span class="font-bold"> Medvirkende:</span> Iben Damkjær, Emil Nygård </p>
+          <p class="text-xs"> <span class="font-bold"> Konsulent:</span> Julie Mogensen </p>
+      </article>
+
+
+
+
+
+      <p id="ingenforestillinger" class="hidden">Ingen forestillinger - prøv et nyt tid og sted:-)</p>
+    
+      </section>
+
+    
+
+      <script>
+      function ingenforestillinger(){
+        const skjulteforestillinger = document.querySelectorAll('.forestilling.hidden').length;
+        if(skjulteforestillinger === 7){
+          document.querySelector("#ingenforestillinger").classList.remove("hidden");
+        } else {
+          document.querySelector("#ingenforestillinger").classList.add("hidden");
+        }          
+      }  
+      </script>
+
+  </main>
+
+
+    
+  </body>
+  <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
+</html>
