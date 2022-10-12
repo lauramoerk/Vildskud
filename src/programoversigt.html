@@ -109,7 +109,7 @@
       </div>
       <div class="navbar-end">
         <a
-          class="btn rounded-md border-2 border-solid border-accent bg-transparent p-2 md:px-10 py-0 font-custard text-sm md:text-lg text-accent hover:bg-accent hover:text-navcolor"
+          class="btn rounded-md border-2 border-solid border-accentcolor bg-transparent p-2 md:px-10 py-0 font-custard text-sm md:text-lg text-accentcolor hover:bg-accentcolor hover:text-navcolor"
           >KØB BILLETTER</a>
       </div>
     </div>
@@ -136,31 +136,38 @@
       </form>
     </header>
 
-    <section class=" flex flex-col gap-8 justify-center items-center  md:gap-x-40 lg:gap-x-80">
+ <!-- <img src="img/ui/Frame 26.svg" alt="tirsdag" :class="{'hidden': !(['alledage',  'onsdag'].includes(spilledag)) }" x-transition:enter.duration.800ms >
+<img src="img/ui/Frame 27.svg" alt="onsdag"  :class="{'hidden': !(['alledage',  'onsdag'].includes(spilledag)) }" x-transition:enter.duration.800ms >
+<img src="img/ui/Frame 28.svg" alt="torsdag" :class="{'hidden': !(['alledage',  'onsdag'].includes(spilledag)) }" x-transition:enter.duration.800ms >
+<img src="img/ui/Frame 29.svg" alt="fredag"  :class="{'hidden': !(['alledage',  'onsdag'].includes(spilledag)) }" x-transition:enter.duration.800ms >
+<img src="img/ui/Frame 30.svg" alt="lørdag"  :class="{'hidden': !(['alledage',  'onsdag'].includes(spilledag)) }" x-transition:enter.duration.800ms > --> 
+
+
+    <section class=" flex flex-col gap-8 justify-center items-center  md:gap-x-40 lg:gap-x-80 mb-16">
 
      
    
 
 
-    <article class="grid grid-rows-4 p-8 gap-4 bg-gradient-to-b from-white to-[#BF374B] md:w-[500px]  " :class="{'hidden': !(['alledage',  'onsdag'].includes(spilledag)) }" x-transition:enter.duration.800ms  >
-      <div class="flex justify-center border-b-[1px]  border-solid border-accent">
+    <article class="grid grid-rows-4 p-8 gap-4 bg-gradient-to-b from-white to-accentcolor md:w-[500px]  " :class="{'hidden': !(['alledage',  'onsdag'].includes(spilledag)) }" x-transition:enter.duration.800ms  >
+      <div class="flex justify-center border-b-[1px]  border-solid border-accentcolor">
       <h1 class="font-custard font-semibold text-2xl">Tirsdag 2/8</h1>
       </div>
       
-      <div class="grid grid-cols-3 border-b-[1px] border-solid border-accent">
+      <div class="grid grid-cols-3 border-b-[1px] border-solid border-accentcolor">
       <div class="programvenue font-custard font-semibold text-2xl pb-2 text-center">Venue</div>
       <div class="programtidspunkt font-custard font-semibold text-2xl pb-2 text-center">Tidspunkt</div>
       <div class="programforestilling font-custard font-semibold text-2xl pb-2 text-center">Forestilling</div>
       </div>
 
       
-      <div class="grid grid-cols-3 border-b-[1px] border-solid border-accent">
+      <div class="grid grid-cols-3 border-b-[1px] border-solid border-accentcolor">
         <div class="programvenue font-urbanist font-semibold pb-2 text-center">ZeBu</div>
         <div class="programtidspunkt font-urbanist italic pb-2 text-center" >16:00</div>
         <div class="programforestilling font-urbanist font-semibold pb-2 text-center">What fires together wires together</div>
         </div>
       
-        <div class="grid grid-cols-3 border-b-[1px]  border-solid border-accent">
+        <div class="grid grid-cols-3 border-b-[1px]  border-solid border-accentcolor">
           <div class="programvenue font-urbanist font-semibold pb-2 text-center">VOX, 
             <br>Teaterhsuet</div>
           <div class="programtidspunkt font-urbanist italic pb-2 text-center">18:30</div>
@@ -176,26 +183,26 @@
       <h1 class="font-custard font-semibold text-2xl">Onsdag 3/8</h1>
       </div>
       
-      <div class="grid grid-cols-3 border-b-[1px] border-solid border-accent">
+      <div class="grid grid-cols-3 border-b-[1px] border-solid border-accentcolor">
       <div class="programvenue font-custard font-semibold text-2xl pb-2 text-center">Venue</div>
       <div class="programtidspunkt font-custard font-semibold text-2xl pb-2 text-center">Tidspunkt</div>
       <div class="programforestilling font-custard font-semibold text-2xl pb-2 text-center">Forestilling</div>
       </div>
 
-      <div class="grid grid-cols-3 border-b-[1px] border-solid border-accent">
+      <div class="grid grid-cols-3 border-b-[1px] border-solid border-accentcolor">
         <div class="programvenue font-urbanist font-semibold pb-2 text-center">VOX, 
           <br>Teaterhsuet</div>
         <div class="programtidspunkt font-urbanist italic pb-2 text-center" >15:00</div>
         <div class="programforestilling font-urbanist font-semibold pb-2 text-center">Vild med mig</div>
         </div>
       
-      <div class="grid grid-cols-3 border-b-[1px] border-solid border-accent">
+      <div class="grid grid-cols-3 border-b-[1px] border-solid border-accentcolor">
         <div class="programvenue font-urbanist font-semibold pb-2 text-center">ZeBu</div>
         <div class="programtidspunkt font-urbanist italic pb-2 text-center" >16:45</div>
         <div class="programforestilling font-urbanist font-semibold pb-2 text-center">What fires together wires together</div>
         </div>
       
-        <div class="grid grid-cols-3 border-b-[1px]  border-solid border-accent">
+        <div class="grid grid-cols-3 border-b-[1px]  border-solid border-accentcolor">
           <div class="programvenue font-urbanist font-semibold pb-2 text-center">VOX, 
             <br>Teaterhsuet</div>
           <div class="programtidspunkt font-urbanist italic pb-2 text-center">18:15</div>
@@ -206,49 +213,49 @@
           </article>
 
     <article class="grid grid-rows-8 p-8 gap-4 bg-gradient-to-b from-white to-[#BF374B] md:w-[500px]  " :class="{'hidden': !(['alledage',  'torsdag'].includes(spilledag)) }" x-transition:enter.duration.800ms  >
-      <div class="flex justify-center border-b-[1px]  border-solid border-accent">
+      <div class="flex justify-center border-b-[1px]  border-solid border-accentcolor">
       <h1 class="font-custard font-semibold text-2xl">Torsdag 4/8</h1>
       </div>
       
-      <div class="grid grid-cols-3 border-b-[1px] border-solid border-accent">
+      <div class="grid grid-cols-3 border-b-[1px] border-solid border-accentcolor">
       <div class="programvenue font-custard font-semibold text-2xl pb-2 text-center">Venue</div>
       <div class="programtidspunkt font-custard font-semibold text-2xl pb-2 text-center">Tidspunkt</div>
       <div class="programforestilling font-custard font-semibold text-2xl pb-2 text-center">Forestilling</div>
       </div>
 
-      <div class="grid grid-cols-3 border-b-[1px] border-solid border-accent">
+      <div class="grid grid-cols-3 border-b-[1px] border-solid border-accentcolor">
         <div class="programvenue font-urbanist font-semibold pb-2 text-center">Downunder</div>
         <div class="programtidspunkt font-urbanist italic pb-2 text-center" >15:00</div>
         <div class="programforestilling font-urbanist font-semibold pb-2 text-center">Re-birth</div>
         </div>
       
-      <div class="grid grid-cols-3 border-b-[1px] border-solid border-accent">
+      <div class="grid grid-cols-3 border-b-[1px] border-solid border-accentcolor">
         <div class="programvenue font-urbanist font-semibold pb-2 text-center">Xenon,
           <br>Teaterhuset</div>
         <div class="programtidspunkt font-urbanist italic pb-2 text-center" >16:45</div>
         <div class="programforestilling font-urbanist font-semibold pb-2 text-center">Go Go Yo-Yoku</div>
         </div>
       
-        <div class="grid grid-cols-3 border-b-[1px]  border-solid border-accent">
+        <div class="grid grid-cols-3 border-b-[1px]  border-solid border-accentcolor">
           <div class="programvenue font-urbanist font-semibold pb-2 text-center">Downunder</div>
           <div class="programtidspunkt font-urbanist italic pb-2 text-center">18:15</div>
           <div class="programforestilling font-urbanist font-semibold pb-2 text-center">Re-birth</div>
           </div>
       
-          <div class="grid grid-cols-3 border-b-[1px]  border-solid border-accent">
+          <div class="grid grid-cols-3 border-b-[1px]  border-solid border-accentcolor">
             <div class="programvenue font-urbanist font-semibold pb-2 text-center">ZeBu</div>
             <div class="programtidspunkt font-urbanist italic pb-2 text-center">18.30</div>
             <div class="programforestilling font-urbanist font-semibold pb-2 text-center">Det levende rum</div>
             </div>
       
-            <div class="grid grid-cols-3 border-b-[1px]  border-solid border-accent">
+            <div class="grid grid-cols-3 border-b-[1px]  border-solid border-accentcolor">
               <div class="programvenue font-urbanist font-semibold pb-2 text-center">Xenon,
                <br>Teaterhuset</div>
               <div class="programtidspunkt font-urbanist italic pb-2 text-center">20.15</div>
               <div class="programforestilling font-urbanist font-semibold pb-2 text-center">Go Go Yo-YoKu</div>
               </div>
       
-              <div class="grid grid-cols-3 border-b-[1px]  border-solid border-accent">
+              <div class="grid grid-cols-3 border-b-[1px]  border-solid border-accentcolor">
                 <div class="programvenue font-urbanist font-semibold pb-2 text-center">Downunder</div>
                 <div class="programtidspunkt font-urbanist italic pb-2 text-center">20:15</div>
                 <div class="programforestilling font-urbanist font-semibold pb-2 text-center">Re-birth</div>
@@ -264,51 +271,51 @@
       <h1 class="font-custard font-semibold text-2xl">Fredag 5/8</h1>
       </div>
       
-      <div class="grid grid-cols-3 border-b-[1px] border-solid border-accent">
+      <div class="grid grid-cols-3 border-b-[1px] border-solid border-accentcolor">
       <div class="programvenue font-custard font-semibold text-2xl pb-2 text-center">Venue</div>
       <div class="programtidspunkt font-custard font-semibold text-2xl pb-2 text-center">Tidspunkt</div>
       <div class="programforestilling font-custard font-semibold text-2xl pb-2 text-center">Forestilling</div>
       </div>
 
-      <div class="grid grid-cols-3 border-b-[1px] border-solid border-accent">
+      <div class="grid grid-cols-3 border-b-[1px] border-solid border-accentcolor">
         <div class="programvenue font-urbanist font-semibold pb-2 text-center">Downunder</div>
         <div class="programtidspunkt font-urbanist italic pb-2 text-center" >15:00</div>
         <div class="programforestilling font-urbanist font-semibold pb-2 text-center">Re-birth</div>
         </div>
       
-      <div class="grid grid-cols-3 border-b-[1px] border-solid border-accent">
+      <div class="grid grid-cols-3 border-b-[1px] border-solid border-accentcolor">
         <div class="programvenue font-urbanist font-semibold pb-2 text-center">Xenon,
           <br>Teaterhuset</div>
         <div class="programtidspunkt font-urbanist italic pb-2 text-center" >16:30</div>
         <div class="programforestilling font-urbanist font-semibold pb-2 text-center">Go Go Yo-Yoku</div>
         </div>
       
-        <div class="grid grid-cols-3 border-b-[1px]  border-solid border-accent">
+        <div class="grid grid-cols-3 border-b-[1px]  border-solid border-accentcolor">
           <div class="programvenue font-urbanist font-semibold pb-2 text-center">ZeBu</div>
           <div class="programtidspunkt font-urbanist italic pb-2 text-center">18:00</div>
           <div class="programforestilling font-urbanist font-semibold pb-2 text-center">Det levende rum</div>
           </div>
       
-          <div class="grid grid-cols-3 border-b-[1px]  border-solid border-accent">
+          <div class="grid grid-cols-3 border-b-[1px]  border-solid border-accentcolor">
             <div class="programvenue font-urbanist font-semibold pb-2 text-center">Downunder</div>
             <div class="programtidspunkt font-urbanist italic pb-2 text-center">18.15</div>
             <div class="programforestilling font-urbanist font-semibold pb-2 text-center">Re-birth</div>
             </div>
       
-            <div class="grid grid-cols-3 border-b-[1px]  border-solid border-accent">
+            <div class="grid grid-cols-3 border-b-[1px]  border-solid border-accentcolor">
               <div class="programvenue font-urbanist font-semibold pb-2 text-center">VOX,
                <br>Teaterhuset</div>
               <div class="programtidspunkt font-urbanist italic pb-2 text-center">19.15</div>
               <div class="programforestilling font-urbanist font-semibold pb-2 text-center">Mand ligger som mand selv har redt</div>
               </div>
       
-              <div class="grid grid-cols-3 border-b-[1px]  border-solid border-accent">
+              <div class="grid grid-cols-3 border-b-[1px]  border-solid border-accentcolor">
                 <div class="programvenue font-urbanist font-semibold pb-2 text-center">Downunder</div>
                 <div class="programtidspunkt font-urbanist italic pb-2 text-center">20:00</div>
                 <div class="programforestilling font-urbanist font-semibold pb-2 text-center">Re-birth</div>
                 </div>
       
-                <div class="grid grid-cols-3 border-b-[1px]  border-solid border-accent">
+                <div class="grid grid-cols-3 border-b-[1px]  border-solid border-accentcolor">
                   <div class="programvenue font-urbanist font-semibold pb-2 text-center">VOX,
                    <br>Teaterhuset</div>
                   <div class="programtidspunkt font-urbanist italic pb-2 text-center">20:30</div>
@@ -322,46 +329,46 @@
 <h1 class="font-custard font-semibold text-2xl">Lørdag 6/8</h1>
 </div>
 
-<div class="grid grid-cols-3 border-b-[1px] border-solid border-accent">
+<div class="grid grid-cols-3 border-b-[1px] border-solid border-accentcolor">
 <div class="programvenue font-custard font-semibold text-2xl pb-2 text-center">Venue</div>
 <div class="programtidspunkt font-custard font-semibold text-2xl pb-2 text-center">Tidspunkt</div>
 <div class="programforestilling font-custard font-semibold text-2xl pb-2 text-center">Forestilling</div>
 </div>
 
-<div class="grid grid-cols-3 border-b-[1px] border-solid border-accent">
+<div class="grid grid-cols-3 border-b-[1px] border-solid border-accentcolor">
   <div class="programvenue font-urbanist font-semibold pb-2 text-center">Xenon,
     <br>Teaterhuset</div>
   <div class="programtidspunkt font-urbanist italic pb-2 text-center" >12:30</div>
   <div class="programforestilling font-urbanist font-semibold pb-2 text-center">Frygten for ikke at leve</div>
   </div>
 
-  <div class="grid grid-cols-3 border-b-[1px]  border-solid border-accent">
+  <div class="grid grid-cols-3 border-b-[1px]  border-solid border-accentcolor">
     <div class="programvenue font-urbanist font-semibold pb-2 text-center">ZeBu</div>
     <div class="programtidspunkt font-urbanist italic pb-2 text-center">12:45</div>
     <div class="programforestilling font-urbanist font-semibold pb-2 text-center">Det levende rum</div>
     </div>
 
-    <div class="grid grid-cols-3 border-b-[1px]  border-solid border-accent">
+    <div class="grid grid-cols-3 border-b-[1px]  border-solid border-accentcolor">
       <div class="programvenue font-urbanist font-semibold pb-2 text-center">VOX, <br> 
       Teaterhuset</div>
       <div class="programtidspunkt font-urbanist italic pb-2 text-center">13:00</div>
       <div class="programforestilling font-urbanist font-semibold pb-2 text-center">Mand ligger som mand selv har redt</div>
       </div>
 
-      <div class="grid grid-cols-3 border-b-[1px]  border-solid border-accent">
+      <div class="grid grid-cols-3 border-b-[1px]  border-solid border-accentcolor">
         <div class="programvenue font-urbanist font-semibold pb-2 text-center">Xenon,
          <br>Teaterhuset</div>
         <div class="programtidspunkt font-urbanist italic pb-2 text-center">14:45</div>
         <div class="programforestilling font-urbanist font-semibold pb-2 text-center">Frygten for ikke at leve</div>
         </div>
 
-        <div class="grid grid-cols-3 border-b-[1px]  border-solid border-accent">
+        <div class="grid grid-cols-3 border-b-[1px]  border-solid border-accentcolor">
           <div class="programvenue font-urbanist font-semibold pb-2 text-center">ZeBu</div>
           <div class="programtidspunkt font-urbanist italic pb-2 text-center">16:15</div>
           <div class="programforestilling font-urbanist font-semibold pb-2 text-center">Det levende rum</div>
           </div>
 
-          <div class="grid grid-cols-3 border-b-[1px]  border-solid border-accent">
+          <div class="grid grid-cols-3 border-b-[1px]  border-solid border-accentcolor">
             <div class="programvenue font-urbanist font-semibold pb-2 text-center">VOX,
              <br>Teaterhuset</div>
             <div class="programtidspunkt font-urbanist italic pb-2 text-center">17:30</div>
