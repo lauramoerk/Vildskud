@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="https://unpkg.com/alpinejs@3.10.4/dist/cdn.min.js"></script>
+    <title>Vite App</title>
+  </head>
+
+  <body class="bg-bgcolor">
+    <header>
+        <div class="navbar bg-navcolor p-4 z-10">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16"
+                    />
+                  </svg>
+                </label>
+                <ul
+                  tabindex="0"
+                  class="dropdown-content menu rounded-box menu-compact mt-3 w-52 bg-navcolor p-2 shadow"
+                >
+                  <li><a href="programoversigt.html" class="font-urbanist">Programoversigt</a></li>
+                  <li><a href="forestillinger.html" class="font-urbanist">Forestillinger</a></li>
+                  <li><a href="events.html" class="font-urbanist">Events</a></li>
+                  <li><a href="omos.html" class="font-urbanist">Om os</a></li>
+                  <li tabindex="0">
+                    <a class="justify-between font-urbanist">
+                      Ansøg
+                      <svg
+                        class="fill-current"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"
+                        />
+                      </svg>
+                    </a>
+                    <ul class="p-2 bg-navcolor">
+                      <li><a href="frivillige.html" class="font-urbanist">Frivillige</a></li>
+                      <li><a href="opencall.html" class="font-urbanist">Open Call</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <a href="index.html" class="btn btn-ghost text-xl normal-case"
+                ><img
+                  class="h-auto w-[90px] md:w-[120px]"
+                  src="img/logo/Asset 2.svg"
+                  alt="logo"
+              /></a>
+            </div>
+            <div class="navbar-center hidden justify-evenly lg:flex">
+              <ul class="menu menu-horizontal p-0">
+                <li>
+                  <a class="font-urbanist" href="programoversigt.html"
+                    >Programoversigt</a
+                  >
+                </li>
+                <li>
+                  <a class="font-urbanist" href="forestillinger.html"
+                    >Forestillinger</a
+                  >
+                </li>
+                <li><a class="font-urbanist" href="events.html">Events</a></li>
+                <li><a class="font-urbanist" href="omos.html">Om os</a></li>
+                <li tabindex="0">
+                  <a class="font-urbanist">
+                    Ansøg
+                    <svg
+                      class="fill-current"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
+                      />
+                    </svg>
+                  </a>
+                  <ul class="p-2 bg-navcolor z-10">
+                    <li>
+                      <a class="font-urbanist" href="frivillige.html">Frivillige</a>
+                    </li>
+                    <li>
+                      <a class="font-urbanist" href="opencall.html">Open Call</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <a
+                class="btn rounded-md border-2 border-solid border-accentcolor bg-transparent p-2 md:px-10 py-0 font-custard text-sm md:text-lg text-accentcolor hover:bg-accentcolor hover:text-navcolor"
+                >KØB BILLETTER</a>
+            </div>
+          </div>
+    </header>
+    <main>
+        <div class="m-4 p-4 flex flex-col gap-6 md:flex-row justify-center items-center">
+            <picture class="flex justify-center">
+                <source class="h-[300px] md:h-[500px]"
+                  srcset="img/avif/mandliggersommandharredt.avif"
+                  type="image/avif"
+                />
+                <img
+                  class="h-[300px] md:h-[500px]"
+                  src="img/webp/mandliggersommandharredt.webp"
+                  alt="event-crowd"
+                />
+
+              </picture>
+                <div class="w-72 p-4 md:w-96 self-center flex-col gap-4">
+                    <h3 class="font-custard text-2xl ">Mand ligger som mand har redt</h3>
+                    <p class="font-bold font-urbanist">5. aug. 19:15, 6. aug. 13:00 & 17:30</p>
+                    <a class="text-accentcolor underline underline-offset-2 font-semibold font-urbanist" href="#">Reserver</a>
+                    <p class="">En forestilling af Kill Your Darlings Hvad sker der mellem mænd når der ikke er andre til stede? Logen: Et sted hvor kun mænd er velkomne. 
+                      Hvor mænd føler sig trygge, men også hvor alt er på spil, både for dem som individer og som gruppe. Et nyt medlem skal optages i logen og indvies i broderskabets fællesskab, ritualer og kutymer. 
+                      Hierarki, skyld, tabu, magt og maskulinitet bliver sat på en spids i et rum, hvor alt er velkomment. Både de sarte og følsomme momenter, samt vold, druk og alt imellem.           
+                      <br>
+                      <br></p>
+                      <p class="text-xs"> <span class="font-bold"> Instruktør:</span> Rasmus Kragh Hemmingsen,  </p>
+                      <p class="text-xs"> <span class="font-bold"> Medinstruktør:</span>  Laura Reynberg Langkilde </p>
+                      <p class="text-xs"> <span class="font-bold"> Kunstnerisk ledelse:</span>  Josefine Münster-Swendsen, Laura Reynberg Langkilde, Rasmus Kragh Hemmingsen Skuespillere Andreas Bitsch Lucas Da Costa Jørgensen, Malthe Heiberg, Mattias Valdemar Nielsen, Niels August Garly Andersen, Rasmus Grarup Elbo, Idé Bjørn Fonnesbech, Niels August Garly Andersen, Rasmus Kragh Hemmingsen Lys/lydtekniker Rasmus Lindahl Konsulent: Mia Lomholt Tvede.</p>
+                </div>
+        </div>
+
+    </main>
+
+    <footer class="footer p-10 bg-navcolor">
+        <div>
+          <h3 class=" font-custard text-xl text-black">NAVIGATION</h3> 
+          <a class="link link-hover font-urbanist">Programoversigt</a> 
+          <a class="link link-hover font-urbanist">Forestillinger</a> 
+          <a class="link link-hover font-urbanist">Events</a> 
+          <a class="link link-hover font-urbanist">Ansøg</a>
+        </div> 
+        <div>
+          <h3 class=" font-custard text-xl text-black">VILDSKUD</h3> 
+          <a href="omos.html" class="link link-hover font-urbanist">Om os</a> 
+          <a href="omos.html" class="link link-hover font-urbanist">Kontakt</a> 
+          <div>
+          <a class="link link-hover font-urbanist"> <iconify-icon icon="dashicons:facebook" width="35" height="35"></iconify-icon></a> 
+          <a class="link link-hover font-urbanist"><iconify-icon icon="ant-design:instagram-filled" width="36" height="36"></iconify-icon></a>
+        </div>
+        </div> 
+        <div>
+          <h3 class=" font-custard text-xl text-black">BETINGELSER</h3> 
+          <a class="link link-hover font-urbanist">Cookies</a> 
+          <a class="link link-hover font-urbanist">Privatpolitik</a> 
+          <a href="sitemap.html" class="link link-hover font-urbanist">Sitemap</a>
+        </div>
+      </footer>
+      <script type="module" src="./main.js"></script>
+  </body>
+  </html>
