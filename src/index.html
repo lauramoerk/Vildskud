@@ -34,7 +34,7 @@
               tabindex="0"
               class="dropdown-content menu rounded-box menu-compact mt-3 w-52 bg-navcolor p-2 shadow"
             >
-              <li><a href="programoversigt.html" class="font-urbanist">Programoversigt</a></li>
+              <li><a href="programoversigt.html" class="font-urbanist active:accent-accentcolor">Program</a></li>
               <li><a href="forestillinger.html" class="font-urbanist">Forestillinger</a></li>
               <li><a href="events.html" class="font-urbanist">Events</a></li>
               <li><a href="omos.html" class="font-urbanist">Om os</a></li>
@@ -61,17 +61,24 @@
             </ul>
           </div>
           <a href="index.html" class="btn btn-ghost text-xl normal-case"
-            ><img
-              class="h-auto w-[90px] md:w-[120px]"
-              src="img/logo/Asset 2.svg"
-              alt="logo"
-          /></a>
+            ><picture class="">
+              <source class="h-auto w-[90px] md:w-[120px]"
+                srcset="img/ui/logoblomst.avif"
+                type="image/avif"
+              />
+              <img
+                class="h-auto w-[90px] md:w-[120px]"
+                src="img/ui/logoblomst.webp"
+                alt="event-crowd"
+              />
+            </picture>
+            </a>
         </div>
         <div class="navbar-center hidden justify-evenly lg:flex">
           <ul class="menu menu-horizontal p-0">
             <li>
               <a class="font-urbanist" href="programoversigt.html"
-                >Programoversigt</a
+                >Program</a
               >
             </li>
             <li>
