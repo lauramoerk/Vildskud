@@ -9,7 +9,7 @@
     ></script>
     <title>Vite App</title>
   </head>
-  <body class="grid place-items-center bg-bgcolor">
+  <body class=" bg-bgcolor">
     <header >
       <div class="navbar bg-navcolor p-4 z-10">
         <div class="navbar-start">
@@ -120,8 +120,8 @@
       id="step"
       x-data="{ spilledag: 'alledage', spillested: 'allevenues', skjulteforestillinger : 0 }"
     >
-      <header class="border-slate-500 border-b pt-4 pb-8">
-        <form id="filtre" class="flex">
+      <div class="border-slate-500 border-b pt-4 pb-8 ">
+        <form id="filtre" class="flex flex-col md:flex-row">
           <div class="mb-4 mr-4">
             <label for="spilledag ">Dato:</label>
             <select
@@ -159,7 +159,7 @@
             </select>
           </div>
         </form>
-      </header>
+      </div>
 
       <section
         class="forestillinger grid grid-cols-1 gap-y-8 md:grid-cols-2 md:gap-x-40 md:gap-y-11 lg:gap-x-80 lg:gap-y-20 pt-11"
@@ -406,7 +406,7 @@
     </main>
     <footer class="footer bg-navcolor p-10">
       <div>
-        <img class="w-72" src="img/logo/Asset 2.svg" alt="logo" />
+<h1 class="font-custard text-6xl">VILDSKUD</h1>
       </div>
       <div>
         <h3 class="font-custard text-xl text-black">NAVIGATION</h3>
