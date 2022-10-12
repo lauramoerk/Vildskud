@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="https://unpkg.com/alpinejs@3.10.4/dist/cdn.min.js"></script>
+    <!-- <script defer src="https://unpkg.com/alpinejs@3.10.4/dist/cdn.min.js"></script> -->
     <title>Vite App</title>
 
 
-    <link rel="stylesheet" href="./assets/style.6efd89b9.css">
+    <link rel="stylesheet" href="./assets/style.baba5acb.css">
   </head>
   <body class="bg-bgcolor">
     
@@ -117,7 +117,7 @@
 
 
 
-  <main class="p-8 " id="step" x-data="{spilledag: 'alledage', skjulteforestillinger : 0 }">
+  <!-- <main class="p-8 " id="step" x-data="{spilledag: 'alledage', skjulteforestillinger : 0 }">
 
     <header class=" flex justify-center pt-4 pb-8">
       <form id="filtre" class="flex">
@@ -135,22 +135,22 @@
     </div>
 
       </form>
-    </header>
+    </header> -->
 
  <!-- <img src="img/ui/Frame 26.svg" alt="tirsdag" :class="{'hidden': !(['alledage',  'onsdag'].includes(spilledag)) }" x-transition:enter.duration.800ms >
 <img src="img/ui/Frame 27.svg" alt="onsdag"  :class="{'hidden': !(['alledage',  'onsdag'].includes(spilledag)) }" x-transition:enter.duration.800ms >
 <img src="img/ui/Frame 28.svg" alt="torsdag" :class="{'hidden': !(['alledage',  'onsdag'].includes(spilledag)) }" x-transition:enter.duration.800ms >
 <img src="img/ui/Frame 29.svg" alt="fredag"  :class="{'hidden': !(['alledage',  'onsdag'].includes(spilledag)) }" x-transition:enter.duration.800ms >
 <img src="img/ui/Frame 30.svg" alt="lørdag"  :class="{'hidden': !(['alledage',  'onsdag'].includes(spilledag)) }" x-transition:enter.duration.800ms > --> 
+<main>
 
+    <!-- <section class=" flex flex-col gap-8 justify-center items-center  md:gap-x-40 lg:gap-x-80 mb-16"> -->
 
-    <section class=" flex flex-col gap-8 justify-center items-center  md:gap-x-40 lg:gap-x-80 mb-16">
-
-     
+      <section class=" grid grid-cols-1 md:grid-cols-3 md:grid-rows-2 gap-10 p-8">
    
 
 
-    <article class="grid grid-rows-4 p-8 gap-4 bg-gradient-to-b from-white to-accentcolor md:w-[500px]  " :class="{'hidden': !(['alledage',  'onsdag'].includes(spilledag)) }" x-transition:enter.duration.800ms  >
+    <article class=" grid grid-rows-4 p-8 gap-4 bg-gradient-to-b from-white to-accentcolor md:w-[450px]  " :class="{'hidden': !(['alledage',  'onsdag'].includes(spilledag)) }" x-transition:enter.duration.800ms  >
       <div class="flex justify-center border-b-[1px]  border-solid border-accentcolor">
       <h1 class="font-custard font-semibold text-2xl">Tirsdag 2/8</h1>
       </div>
@@ -179,8 +179,8 @@
           </article>
 
 
-    <article class="grid grid-rows-5 p-8 gap-4 bg-gradient-to-b from-white to-[#BF374B] md:w-[500px]  " :class="{'hidden': !(['alledage',  'onsdag'].includes(spilledag)) }" x-transition:enter.duration.800ms  >
-      <div class="flex justify-center border-b-[1px]  border-solid border-accent">
+    <article class="grid grid-rows-5 p-8 gap-4 bg-gradient-to-b from-white to-[#BF374B] md:w-[450px]  " :class="{'hidden': !(['alledage',  'onsdag'].includes(spilledag)) }" x-transition:enter.duration.800ms  >
+      <div class="flex justify-center border-b-[1px]  border-solid border-accentcolor">
       <h1 class="font-custard font-semibold text-2xl">Onsdag 3/8</h1>
       </div>
       
@@ -213,7 +213,7 @@
       
           </article>
 
-    <article class="grid grid-rows-8 p-8 gap-4 bg-gradient-to-b from-white to-[#BF374B] md:w-[500px]  " :class="{'hidden': !(['alledage',  'torsdag'].includes(spilledag)) }" x-transition:enter.duration.800ms  >
+    <article class="grid grid-rows-8 p-8 gap-4 bg-gradient-to-b from-white to-[#BF374B] md:w-[450px]  " :class="{'hidden': !(['alledage',  'torsdag'].includes(spilledag)) }" x-transition:enter.duration.800ms  >
       <div class="flex justify-center border-b-[1px]  border-solid border-accentcolor">
       <h1 class="font-custard font-semibold text-2xl">Torsdag 4/8</h1>
       </div>
@@ -267,8 +267,8 @@
           </article>
 
 
-    <article class="grid grid-rows-9 p-8 gap-4 bg-gradient-to-b from-white to-[#BF374B] md:w-[500px]  " :class="{'hidden': !(['alledage',  'fredag'].includes(spilledag)) }" x-transition:enter.duration.800ms  >
-      <div class="flex justify-center border-b-[1px]  border-solid border-accent">
+    <article class="grid grid-rows-9 p-8 gap-4 bg-gradient-to-b from-white to-[#BF374B] md:w-[450px]  " :class="{'hidden': !(['alledage',  'fredag'].includes(spilledag)) }" x-transition:enter.duration.800ms  >
+      <div class="flex justify-center border-b-[1px]  border-solid border-accentcolor">
       <h1 class="font-custard font-semibold text-2xl">Fredag 5/8</h1>
       </div>
       
@@ -325,8 +325,8 @@
       
           </article>
     
-    <article class="grid grid-rows-8 p-8 gap-4 bg-gradient-to-b from-white to-[#BF374B] md:w-[500px]  " :class="{'hidden': !(['alledage', 'lordag'].includes(spilledag)) }" x-transition:enter.duration.800ms  >
-<div class="flex justify-center border-b-[1px]  border-solid border-accent">
+    <article class="grid grid-rows-8 p-8 gap-4 bg-gradient-to-b from-white to-[#BF374B] md:w-[450px]  " :class="{'hidden': !(['alledage', 'lordag'].includes(spilledag)) }" x-transition:enter.duration.800ms  >
+<div class="flex justify-center border-b-[1px]  border-solid border-accentcolor">
 <h1 class="font-custard font-semibold text-2xl">Lørdag 6/8</h1>
 </div>
 
