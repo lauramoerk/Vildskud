@@ -163,9 +163,9 @@
               x-on:change="$nextTick(() => { ingenforestillinger() });"
             >
               <option value="allevenues">Alle venues</option>
-              <option value="vox">Vox</option>
+              <option value="vox">VOX</option>
               <option value="downunder">Downunder</option>
-              <option value="zebu">Zebu</option>
+              <option value="zebu">ZeBU</option>
               <option value="xenon">Xenon Teaterhuset</option>
             </select>
           </div>
@@ -175,8 +175,8 @@
       <section
         class="forestillinger grid grid-cols-1 gap-y-8 md:grid-cols-2 md:gap-x-40 md:gap-y-11 lg:gap-x-80 lg:gap-y-20 pt-11"
       >
-        <article
-          class="forestilling flex w-80 flex-col p-3 border-2 rounded-md border-primarycolor justify-center"
+        <a href="#"><article
+          class="forestilling hover:shadow-2xl  flex w-80 flex-col p-3 border-2 rounded-md border-accentcolor justify-center"
           :class="{'hidden': !(['alledage', 'tirsdag', 'onsdag'].includes(spilledag) && ['allevenues', 'xenon'].includes(spillested)) }"
           x-transition:enter.duration.800ms
           x-on:change="testfunction();"
@@ -197,19 +197,15 @@
           <p class="font-urbanist font-bold">
             4. aug. 16:45 & 20:15, 5. aug. 16:30
           </p>
-          <a
-            class="font-urbanist font-semibold text-primarycolor underline underline-offset-2"
-            href="#"
-            >Læs mere</a
-          >
+          <p class="italic"><span class="font-semibold">Venue:</span> Xenon</p>
           <p class="">
             En forestilling af KOPFKINO. Find din yoyo frem og sæt dig selv fri
             i en skov.
           </p>
-        </article>
+        </article></a>
 
-        <article
-          class="forestilling flex w-80 flex-col p-3 border-2 rounded-md border-primarycolor justify-center"
+        <a href="#"><article
+          class="forestilling hover:shadow-2xl flex w-80 flex-col p-3 border-2 rounded-md border-accentcolor justify-center"
           :class="{'hidden': !(['alledage', 'onsdag', 'torsdag'].includes(spilledag) && ['allevenues', 'vox'].includes(spillested)) }"
           x-transition:enter.duration.800ms
           x-on:change="testfunction();"
@@ -230,20 +226,17 @@
           <p class="font-urbanist font-bold">
             5. aug. 19:15, 6. aug. 13:00 & 17:30
           </p>
-          <a
-            class="font-urbanist font-semibold text-primarycolor underline underline-offset-2"
-            href="#"
-            >Læs mere</a
-          >
+
+          <p class="italic"><span class="font-semibold">Venue:</span> VOX</p>
           <p class="">
             En forestilling af Kill Your Darlings Hvad sker der mellem mænd når
             der ikke er andre til stede? 
           </p>
           
-        </article>
+        </article></a>
 
-        <article
-          class="forestilling flex w-80 flex-col p-3 border-2 rounded-md border-primarycolor justify-center"
+        <a href="#"><article
+          class="forestilling hover:shadow-2xl flex w-80 flex-col p-3 border-2 rounded-md border-accentcolor justify-center"
           :class="{'hidden': !(['alledage', 'tirsdag', 'onsdag'].includes(spilledag) && ['allevenues', 'vox'].includes(spillested)) }"
           x-transition:enter.duration.800ms
           x-on:change="testfunction();"
@@ -264,20 +257,16 @@
           <p class="font-urbanist font-bold">
             2. aug. 18:30, 3. aug. 16:15 & 20:00
           </p>
-          <a
-            class="font-urbanist font-semibold text-primarycolor underline underline-offset-2"
-            href="#"
-            >Læs mere</a
-          >
+          <p class="italic"><span class="font-semibold">Venue:</span> VOX</p>
           <p class="">
             Forestilling af TEATER MANNEQUIN Velkommen! Til et univers i
             kærlighedens navn. 
           </p>
           
-        </article>
+        </article></a>
 
-        <article
-          class="forestilling flex w-80 flex-col p-3 border-2 rounded-md border-primarycolor justify-center"
+        <a href="#"><article
+          class="forestilling hover:shadow-2xl flex w-80 flex-col p-3 border-2 rounded-md border-accentcolor justify-center"
           :class="{'hidden': !(['alledage', 'lørdag', 'torsdag', 'fredag'].includes(spilledag) && ['allevenues', 'zebu'].includes(spillested)) }"
           x-transition:enter.duration.800ms
           x-on:change="testfunction();"
@@ -298,11 +287,7 @@
           <p class="font-urbanist font-bold">
             4. aug. 18:30, 5. aug. 18:00, 6. aug. 12:45 & 16:15
           </p>
-          <a
-            class="font-urbanist font-semibold text-primarycolor underline underline-offset-2"
-            href="#"
-            >Læs mere</a
-          >
+          <p class="italic"><span class="font-semibold">Venue:</span> ZeBU</p>
           <p class="">
             En forestilling af Spræng Danseteater. I 'Det Levende Rum' møder vi
             de mennesker, der er blevet elimineret fra den utopiske verden 'New
@@ -310,10 +295,10 @@
             
           </p>
           
-        </article>
+        </article></a>
 
-        <article
-          class="forestilling flex w-80 flex-col p-3 border-2 rounded-md border-primarycolor justify-center"
+        <a href="#"><article
+          class="forestilling hover:shadow-2xl flex w-80 flex-col p-3 border-2 rounded-md border-accentcolor justify-center"
           :class="{'hidden': !(['alledage', 'lørdag', 'fredag'].includes(spilledag) && ['allevenues', 'zebu'].includes(spillested)) }"
           x-transition:enter.duration.800ms
           x-on:change="testfunction();"
@@ -334,21 +319,17 @@
           <p class="font-urbanist font-bold">
             5. aug. 20:30, 6. aug. 12:30 & 14:45
           </p>
-          <a
-            class="font-urbanist font-semibold text-primarycolor underline underline-offset-2"
-            href="#"
-            >Læs mere</a
-          >
+          <p class="italic"><span class="font-semibold">Venue:</span> ZeBU</p>
           <p class="">
             En forestilling af JUNOS DISCIPLE I forestillingen “Frygten for ikke
             at leve” stiller vi os foran det spejl, der hedder Emilie Sannom.
             
           </p>
           
-        </article>
+        </article></a>
 
-        <article
-          class="forestilling flex w-80 flex-col p-3 border-2 rounded-md border-primarycolor self-center"
+        <a href="#"><article
+          class="forestilling hover:shadow-2xl flex w-80 flex-col p-3 border-2 rounded-md border-accentcolor self-center"
           :class="{'hidden': !(['alledage', 'torsdag', 'fredag'].includes(spilledag) && ['allevenues', 'zebu'].includes(spillested)) }"
           x-transition:enter.duration.800ms
           x-on:change="testfunction();"
@@ -371,20 +352,16 @@
           <p class="font-urbanist font-bold">
             4. aug. 18:30, 5. aug. 18:00, 6. aug. 12:45 & 16:15
           </p>
-          <a
-            class="font-urbanist font-semibold text-primarycolor underline underline-offset-2"
-            href="#"
-            >Læs mere</a
-          >
+          <p class="italic"><span class="font-semibold">Venue:</span> ZeBU</p>
           <p class="">
             En forestilling af Astrid & Lotte Forestillingen “What Fires Together Wires Together” eksperimenterer i spændingsfeltet mellem dans/bevægelse og naturvidenskab.
             
           </p>
           
-        </article>
+        </article></a>
 
-        <article
-          class="forestilling flex w-80 flex-col p-3 border-2 rounded-md border-primarycolor self-center"
+        <a href="#"><article
+          class="forestilling hover:shadow-2xl flex w-80 flex-col p-3 border-2 rounded-md border-accentcolor self-center"
           :class="{'hidden': !(['alledage', 'torsdag', 'fredag'].includes(spilledag) && ['allevenues', 'downunder'].includes(spillested)) }"
           x-transition:enter.duration.800ms
           x-on:change="testfunction();"
@@ -405,11 +382,7 @@
           <p class="font-urbanist font-bold">
             4. aug. 15:00 & 18:15 & 20:15, 5. aug. 15:00 & 18:00 & 20:15
           </p>
-          <a
-            class="font-urbanist font-semibold text-primarycolor underline underline-offset-2"
-            href="#"
-            >Læs mere</a
-          >
+          <p class="italic"><span class="font-semibold">Venue:</span> Downunder</p>
           <p class="">
             Forestilling af af Where is the rabbithole Året er 2222, vi er i et
             underjordisk genfødselskammer - et såkaldt SkaberLab - hvor
@@ -418,7 +391,7 @@
           
           </p>
           
-        </article>
+        </article></a>
 
         <p id="ingenforestillinger" class="hidden">
           Ingen forestillinger - prøv et nyt tid og sted:-)
