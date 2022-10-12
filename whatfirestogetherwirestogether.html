@@ -3,10 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="https://unpkg.com/alpinejs@3.10.4/dist/cdn.min.js"></script>
     <title>Vite App</title>
     <script type="module" crossorigin src="./assets/main.c6a7e561.js"></script>
-    <link rel="stylesheet" href="./assets/style.8bedc5e3.css">
+    <link rel="stylesheet" href="./assets/style.b456e1a7.css">
   </head>
 
   <body class="bg-bgcolor">
@@ -61,11 +60,18 @@
                 </ul>
               </div>
               <a href="index.html" class="btn btn-ghost text-xl normal-case"
-                ><img
-                  class="h-auto w-[90px] md:w-[120px]"
-                  src="./assets/Asset 2.0420bdc5.svg"
-                  alt="logo"
-              /></a>
+                ><picture class="flex justify-center h-12 place-items-center ">
+                  <source class="h-12 "
+                    srcset="./assets/logoet.47887197.avif "
+                    type="image/avif"
+                  />
+                  <img
+                    class="h-12 "
+                    src="data:image/webp;base64,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"
+                    alt="event-crowd"
+                  />
+  
+                </picture></a>
             </div>
             <div class="navbar-center hidden justify-evenly lg:flex">
               <ul class="menu menu-horizontal p-0">
@@ -142,31 +148,45 @@
         </div>
 
     </main>
-
-    <footer class="footer p-10 bg-navcolor">
+    <footer class="footer bg-navcolor p-10">
+      <div>
+<h1 class="font-custard text-6xl">VILDSKUD</h1>
+      </div>
+      <div>
+        <h3 class="font-custard text-xl text-black">NAVIGATION</h3>
+        <a class="link link-hover font-urbanist">Programoversigt</a>
+        <a class="link link-hover font-urbanist">Forestillinger</a>
+        <a class="link link-hover font-urbanist">Events</a>
+        <a class="link link-hover font-urbanist">Ansøg</a>
+      </div>
+      <div>
+        <h3 class="font-custard text-xl text-black">VILDSKUD</h3>
+        <a href="omos.html" class="link link-hover font-urbanist">Om os</a>
+        <a href="omos.html" class="link link-hover font-urbanist">Kontakt</a>
         <div>
-          <h3 class=" font-custard text-xl text-black">NAVIGATION</h3> 
-          <a class="link link-hover font-urbanist">Programoversigt</a> 
-          <a class="link link-hover font-urbanist">Forestillinger</a> 
-          <a class="link link-hover font-urbanist">Events</a> 
-          <a class="link link-hover font-urbanist">Ansøg</a>
-        </div> 
-        <div>
-          <h3 class=" font-custard text-xl text-black">VILDSKUD</h3> 
-          <a href="omos.html" class="link link-hover font-urbanist">Om os</a> 
-          <a href="omos.html" class="link link-hover font-urbanist">Kontakt</a> 
-          <div>
-          <a class="link link-hover font-urbanist"> <iconify-icon icon="dashicons:facebook" width="35" height="35"></iconify-icon></a> 
-          <a class="link link-hover font-urbanist"><iconify-icon icon="ant-design:instagram-filled" width="36" height="36"></iconify-icon></a>
+          <a class="link link-hover font-urbanist">
+            <iconify-icon
+              icon="dashicons:facebook"
+              width="35"
+              height="35"
+            ></iconify-icon
+          ></a>
+          <a class="link link-hover font-urbanist"
+            ><iconify-icon
+              icon="ant-design:instagram-filled"
+              width="36"
+              height="36"
+            ></iconify-icon
+          ></a>
         </div>
-        </div> 
-        <div>
-          <h3 class=" font-custard text-xl text-black">BETINGELSER</h3> 
-          <a class="link link-hover font-urbanist">Cookies</a> 
-          <a class="link link-hover font-urbanist">Privatpolitik</a> 
-          <a href="sitemap.html" class="link link-hover font-urbanist">Sitemap</a>
-        </div>
-      </footer>
+      </div>
+      <div>
+        <h3 class="font-custard text-xl text-black">BETINGELSER</h3>
+        <a class="link link-hover font-urbanist">Cookies</a>
+        <a class="link link-hover font-urbanist">Privatpolitik</a>
+        <a href="sitemap.html" class="link link-hover font-urbanist">Sitemap</a>
+      </div>
+    </footer>
       
   </body>
   </html>
