@@ -9,9 +9,9 @@
     ></script>
     <title>Vildskud</title>
     <script type="module" crossorigin src="./assets/main.c6a7e561.js"></script>
-    <link rel="stylesheet" href="./assets/style.193e983f.css">
+    <link rel="stylesheet" href="./assets/style.1369ff50.css">
   </head>
-  <body class=" bg-bgcolor">
+  <body class="bg-gradient-to-b from-bgcolor to-accentcolor">
     <header >
       <div class="navbar bg-navcolor p-4 z-10">
         <div class="navbar-start">
@@ -129,7 +129,7 @@
       id="step"
       x-data="{ spilledag: 'alledage', spillested: 'allevenues', skjulteforestillinger : 0 }"
     >
-      <div class="border-slate-500 border-b pt-4 pb-8 ">
+      <div class="border-accentcolor border-b pt-4 pb-8 ">
         <form id="filtre" class="flex flex-col md:flex-row">
           <div class="mb-4 mr-4">
             <label for="spilledag ">Dato:</label>
@@ -171,10 +171,10 @@
       </div>
 
       <section
-        class="forestillinger grid grid-cols-1 gap-y-8 md:grid-cols-2 md:gap-x-40 md:gap-y-11 lg:gap-x-80 lg:gap-y-20 pt-11"
+        class="forestillinger grid grid-cols-1 gap-y-8 md:grid-cols-2  md:gap-y-11 lg:gap-y-20 pt-11 place-items-center place-content-center "
       >
         <a href="gogoyo-ku.html"><article
-          class="forestilling hover:shadow-2xl  flex w-80 flex-col p-3 border-2 rounded-md border-accentcolor justify-center"
+          class="forestilling hover:shadow-2xl  flex w-80 flex-col p-3 border-2 rounded-md border-accentcolor justify-center bg-bgcolor "
           :class="{'hidden': !(['alledage', 'tirsdag', 'onsdag'].includes(spilledag) && ['allevenues', 'xenon'].includes(spillested)) }"
           x-transition:enter.duration.800ms
           x-on:change="testfunction();"
@@ -203,7 +203,7 @@
         </article></a>
 
         <a href="mandliggersommandharredt.html"><article
-          class="forestilling hover:shadow-2xl flex w-80 flex-col p-3 border-2 rounded-md border-accentcolor justify-center"
+          class="forestilling hover:shadow-2xl flex w-80 flex-col p-3 border-2 rounded-md border-accentcolor justify-center bg-bgcolor "
           :class="{'hidden': !(['alledage', 'onsdag', 'torsdag'].includes(spilledag) && ['allevenues', 'vox'].includes(spillested)) }"
           x-transition:enter.duration.800ms
           x-on:change="testfunction();"
@@ -234,7 +234,7 @@
         </article></a>
 
         <a href="vildmedmig.html"><article
-          class="forestilling hover:shadow-2xl flex w-80 flex-col p-3 border-2 rounded-md border-accentcolor justify-center"
+          class="forestilling hover:shadow-2xl flex w-80 flex-col p-3 border-2 rounded-md border-accentcolor justify-center bg-bgcolor"
           :class="{'hidden': !(['alledage', 'tirsdag', 'onsdag'].includes(spilledag) && ['allevenues', 'vox'].includes(spillested)) }"
           x-transition:enter.duration.800ms
           x-on:change="testfunction();"
@@ -264,7 +264,7 @@
         </article></a>
 
         <a href="detlevenderum.html"><article
-          class="forestilling hover:shadow-2xl flex w-80 flex-col p-3 border-2 rounded-md border-accentcolor justify-center"
+          class="forestilling hover:shadow-2xl flex w-80 flex-col p-3 border-2 rounded-md border-accentcolor justify-center bg-bgcolor "
           :class="{'hidden': !(['alledage', 'lørdag', 'torsdag', 'fredag'].includes(spilledag) && ['allevenues', 'zebu'].includes(spillested)) }"
           x-transition:enter.duration.800ms
           x-on:change="testfunction();"
@@ -296,7 +296,7 @@
         </article></a>
 
         <a href="frygtenforikkeatleve.html"><article
-          class="forestilling hover:shadow-2xl flex w-80 flex-col p-3 border-2 rounded-md border-accentcolor justify-center"
+          class="forestilling hover:shadow-2xl flex w-80 flex-col p-3 border-2 rounded-md border-accentcolor justify-center bg-bgcolor "
           :class="{'hidden': !(['alledage', 'lørdag', 'fredag'].includes(spilledag) && ['allevenues', 'zebu'].includes(spillested)) }"
           x-transition:enter.duration.800ms
           x-on:change="testfunction();"
@@ -327,7 +327,7 @@
         </article></a>
 
         <a href="whatfirestogetherwirestogether.html"><article
-          class="forestilling hover:shadow-2xl flex w-80 flex-col p-3 border-2 rounded-md border-accentcolor self-center"
+          class="forestilling hover:shadow-2xl flex w-80 flex-col p-3 border-2 rounded-md border-accentcolor self-center bg-bgcolor "
           :class="{'hidden': !(['alledage', 'torsdag', 'fredag'].includes(spilledag) && ['allevenues', 'zebu'].includes(spillested)) }"
           x-transition:enter.duration.800ms
           x-on:change="testfunction();"
@@ -359,7 +359,7 @@
         </article></a>
 
         <a href="re-birth.html"><article
-          class="forestilling hover:shadow-2xl flex w-80 flex-col p-3 border-2 rounded-md border-accentcolor self-center"
+          class="forestilling hover:shadow-2xl flex w-80 flex-col p-3 border-2 rounded-md border-accentcolor self-center bg-bgcolor"
           :class="{'hidden': !(['alledage', 'torsdag', 'fredag'].includes(spilledag) && ['allevenues', 'downunder'].includes(spillested)) }"
           x-transition:enter.duration.800ms
           x-on:change="testfunction();"
