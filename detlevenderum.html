@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vildskud</title>
     <script type="module" crossorigin src="./assets/main.c6a7e561.js"></script>
-    <link rel="stylesheet" href="./assets/style.571b2b7c.css">
+    <link rel="stylesheet" href="./assets/style.720d5b0f.css">
   </head>
 
   <body class="bg-bgcolor">
-    <header >
-      <div class="navbar bg-navcolor p-4 z-10">
+    <header>
+      <div class="navbar z-10 bg-navcolor p-4">
         <div class="navbar-start">
           <div class="dropdown">
             <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -33,8 +33,18 @@
               tabindex="0"
               class="dropdown-content menu rounded-box menu-compact mt-3 w-52 bg-navcolor p-2 shadow"
             >
-              <li><a href="programoversigt.html" class="font-urbanist active:accent-accentcolor">Program</a></li>
-              <li><a href="forestillinger.html" class="font-urbanist">Forestillinger</a></li>
+              <li>
+                <a
+                  href="programoversigt.html"
+                  class="font-urbanist active:accent-accentcolor"
+                  >Program</a
+                >
+              </li>
+              <li>
+                <a href="forestillinger.html" class="font-urbanist"
+                  >Forestillinger</a
+                >
+              </li>
               <li><a href="events.html" class="font-urbanist">Events</a></li>
               <li><a href="omos.html" class="font-urbanist">Om os</a></li>
               <li tabindex="0">
@@ -52,16 +62,23 @@
                     />
                   </svg>
                 </a>
-                <ul class="p-2 bg-navcolor">
-                  <li><a href="frivillige.html" class="font-urbanist">Frivillige</a></li>
-                  <li><a href="opencall.html" class="font-urbanist">Open Call</a></li>
+                <ul class="bg-navcolor p-2">
+                  <li>
+                    <a href="frivillige.html" class="font-urbanist"
+                      >Frivillig</a
+                    >
+                  </li>
+                  <li>
+                    <a href="opencall.html" class="font-urbanist">Open Call</a>
+                  </li>
                 </ul>
               </li>
             </ul>
           </div>
           <a href="index.html" class="btn btn-ghost text-xl normal-case"
             ><picture class="">
-              <source class="h-auto w-[90px] md:w-[120px]"
+              <source
+                class="h-auto w-[90px] md:w-[120px]"
                 srcset="data:image/avif;base64,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 "
                 type="image/avif"
               />
@@ -71,14 +88,12 @@
                 alt="event-crowd"
               />
             </picture>
-            </a>
+          </a>
         </div>
         <div class="navbar-center hidden justify-evenly lg:flex">
           <ul class="menu menu-horizontal p-0">
             <li>
-              <a class="font-urbanist" href="programoversigt.html"
-                >Program</a
-              >
+              <a class="font-urbanist" href="programoversigt.html">Program</a>
             </li>
             <li>
               <a class="font-urbanist" href="forestillinger.html"
@@ -102,9 +117,9 @@
                   />
                 </svg>
               </a>
-              <ul class="p-2 bg-navcolor z-10">
+              <ul class="z-10 bg-navcolor p-2">
                 <li>
-                  <a class="font-urbanist" href="frivillige.html">Frivillige</a>
+                  <a class="font-urbanist" href="frivillige.html">Frivillig</a>
                 </li>
                 <li>
                   <a class="font-urbanist" href="opencall.html">Open Call</a>
@@ -115,8 +130,9 @@
         </div>
         <div class="navbar-end">
           <a
-            class="btn rounded-md border-2 border-solid border-accentcolor bg-transparent p-2 md:px-10 py-0 font-custard text-sm md:text-lg text-accentcolor hover:bg-accentcolor hover:border-accentcolor hover:text-navcolor"
-            >KØB BILLETTER</a>
+            class="btn rounded-md border-2 border-solid border-accentcolor bg-transparent p-2 py-0 font-custard text-sm text-accentcolor hover:border-accentcolor hover:bg-accentcolor hover:text-navcolor md:px-10 md:text-lg"
+            >KØB BILLETTER</a
+          >
         </div>
       </div>
     </header>
@@ -155,10 +171,11 @@
       </div>
       <div>
         <h3 class="font-custard text-xl text-black">NAVIGATION</h3>
-        <a class="link link-hover font-urbanist">Program</a>
-        <a class="link link-hover font-urbanist">Forestillinger</a>
-        <a class="link link-hover font-urbanist">Events</a>
-        <a class="link link-hover font-urbanist">Ansøg</a>
+        <a href="programoversigt.html" class="link link-hover font-urbanist">Program</a>
+        <a href="forestillinger.html" class="link link-hover font-urbanist">Forestillinger</a>
+        <a href="events.html" class="link link-hover font-urbanist">Events</a>
+        <a href="frivillige.html" class="link link-hover font-urbanist">Frivillig</a>
+        <a href="opencall.html" class="link link-hover font-urbanist">Open Call</a>
       </div>
       <div>
         <h3 class="font-custard text-xl text-black">VILDSKUD</h3>
