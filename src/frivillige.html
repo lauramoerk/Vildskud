@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vildskud</title>
   </head>
-  <body class="relative bg-gradient-to-b from-white to-[#BF374B]">
-    <header >
-      <div class="navbar bg-navcolor p-4 z-10">
+  <body class="relative bg-bgcolor">
+    <header>
+      <div class="navbar z-10 bg-navcolor p-4">
         <div class="navbar-start">
           <div class="dropdown">
             <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -30,8 +30,18 @@
               tabindex="0"
               class="dropdown-content menu rounded-box menu-compact mt-3 w-52 bg-navcolor p-2 shadow"
             >
-              <li><a href="programoversigt.html" class="font-urbanist active:accent-accentcolor">Program</a></li>
-              <li><a href="forestillinger.html" class="font-urbanist">Forestillinger</a></li>
+              <li>
+                <a
+                  href="programoversigt.html"
+                  class="font-urbanist active:accent-accentcolor"
+                  >Program</a
+                >
+              </li>
+              <li>
+                <a href="forestillinger.html" class="font-urbanist"
+                  >Forestillinger</a
+                >
+              </li>
               <li><a href="events.html" class="font-urbanist">Events</a></li>
               <li><a href="omos.html" class="font-urbanist">Om os</a></li>
               <li tabindex="0">
@@ -49,16 +59,23 @@
                     />
                   </svg>
                 </a>
-                <ul class="p-2 bg-navcolor">
-                  <li><a href="frivillige.html" class="font-urbanist">Frivillige</a></li>
-                  <li><a href="opencall.html" class="font-urbanist">Open Call</a></li>
+                <ul class="bg-navcolor p-2">
+                  <li>
+                    <a href="frivillige.html" class="font-urbanist"
+                      >Frivillig</a
+                    >
+                  </li>
+                  <li>
+                    <a href="opencall.html" class="font-urbanist">Open Call</a>
+                  </li>
                 </ul>
               </li>
             </ul>
           </div>
           <a href="index.html" class="btn btn-ghost text-xl normal-case"
             ><picture class="">
-              <source class="h-auto w-[90px] md:w-[120px]"
+              <source
+                class="h-auto w-[90px] md:w-[120px]"
                 srcset="img/ui/logoblomst.avif"
                 type="image/avif"
               />
@@ -68,14 +85,12 @@
                 alt="event-crowd"
               />
             </picture>
-            </a>
+          </a>
         </div>
         <div class="navbar-center hidden justify-evenly lg:flex">
           <ul class="menu menu-horizontal p-0">
             <li>
-              <a class="font-urbanist" href="programoversigt.html"
-                >Program</a
-              >
+              <a class="font-urbanist" href="programoversigt.html">Program</a>
             </li>
             <li>
               <a class="font-urbanist" href="forestillinger.html"
@@ -99,9 +114,9 @@
                   />
                 </svg>
               </a>
-              <ul class="p-2 bg-navcolor z-10">
+              <ul class="z-10 bg-navcolor p-2">
                 <li>
-                  <a class="font-urbanist" href="frivillige.html">Frivillige</a>
+                  <a class="font-urbanist" href="frivillige.html">Frivillig</a>
                 </li>
                 <li>
                   <a class="font-urbanist" href="opencall.html">Open Call</a>
@@ -112,30 +127,43 @@
         </div>
         <div class="navbar-end">
           <a
-            class="btn rounded-md border-2 border-solid border-accentcolor bg-transparent p-2 md:px-10 py-0 font-custard text-sm md:text-lg text-accentcolor hover:bg-accentcolor hover:border-accentcolor hover:text-navcolor"
-            >KØB BILLETTER</a>
+            class="btn rounded-md border-2 border-solid border-accentcolor bg-transparent p-2 py-0 font-custard text-sm text-accentcolor hover:border-accentcolor hover:bg-accentcolor hover:text-navcolor md:px-10 md:text-lg"
+            >KØB BILLETTER</a
+          >
         </div>
       </div>
     </header>
-    <main class="flex h-screen flex-col justify-center gap-8">
-      <h1 class="text-center font-custard text-2xl md:text-4xl lg:text-9xl">
-        BLIV FRIVILLIG
-      </h1>
-      <div class="flex flex-col items-center gap-4 px-8 md:px-16">
-        <p class="text-center font-urbanist md:text-base">
-          VILSKUD er en festival drevet af frivillige og vi er altid på udkig
-          efter nye endnu flere medlemmer til vores team.
-        </p>
-        <p class="text-center font-urbanist md:text-base">
-          Hvis du har lyst til at høre mere om jobbet som frivillig, så kan du
-          tilmelde dig nedenfor, så kontakter vi dig efterfølgende med flere
-          informationer.
-        </p>
-        <p class="text-center font-urbanist md:text-base">
-          OBS: Tilmelding er selvfølgelig uforpligtende.
-        </p>
+    <main>
+      <div class="relative h-64 overflow-hidden md:h-96">
+        <h1
+          class="hero-text absolute text-center font-custard text-6xl text-bgcolor md:text-9xl"
+        >
+          Frivilig
+        </h1>
+        <div class="h-80 bg-gradient-to-t from-bgcolor to-accentcolor"></div>
+      </div>
+      <div
+        class="mx-5 flex flex-col items-center gap-20 px-8 pt-11 pb-11 md:flex-row md:items-start md:px-16"
+      >
+        <div class="md:w-1/2">
+          <p class="pb-3 font-urbanist md:text-base">
+            <span class="font-semibold">VILSKUD</span> er en festival drevet af
+            frivillige og vi er altid på udkig efter nye endnu flere medlemmer
+            til vores team.
+          </p>
+          <p class="pb-3 font-urbanist md:text-base">
+            Hvis du har lyst til at høre mere om jobbet som frivillig, så kan du
+            tilmelde dig nedenfor, så kontakter vi dig efterfølgende med flere
+            informationer.
+          </p>
+          <p class="font-urbanist italic md:text-base">
+            OBS: Tilmelding er selvfølgelig uforpligtende.
+          </p>
+        </div>
 
-        <div class="flex flex-col gap-4 md:flex-row md:gap-10 ">
+        <div
+          class="flex flex-col items-center gap-4 md:w-1/2 md:flex-col md:gap-10"
+        >
           <input
             type="text"
             id="name"
@@ -144,9 +172,8 @@
             minlength="4"
             maxlength="8"
             size="10"
-            
             placeholder="Fulde navn"
-            class="placeholder-gray-900 border-b-2 border-t-0 border-r-0 border-l-0 border-solid border-[#000] bg-transparent font-urbanist focus:ring-transparent md:w-48"
+            class="placeholder-gray-900 border-b-2 border-t-0 border-r-0 border-l-0 border-solid border-[#000] bg-transparent font-urbanist focus:ring-transparent w-48"
           />
 
           <input
@@ -158,11 +185,11 @@
             maxlength="8"
             size="10"
             placeholder="E-mail "
-            class="placeholder-gray-900 border-b-2 border-t-0 border-r-0 border-l-0 border-solid border-[#000] bg-transparent font-urbanist focus:outline-none focus:ring-transparent md:w-48"
+            class="placeholder-gray-900 border-b-2 border-t-0 border-r-0 border-l-0 border-solid border-[#000] bg-transparent font-urbanist focus:outline-none focus:ring-transparent w-48"
           />
 
           <button
-            class="btn rounded-md border-2 border-solid border-[#000] bg-transparent p-4 py-0 font-custard text-lg text-black hover:bg-black hover:text-bgcolor md:px-10"
+            class="btn w-fit rounded-md border-2 border-solid border-accentcolor bg-transparent p-4 py-0 font-custard text-lg text-accentcolor hover:border-accentcolor hover:bg-accentcolor hover:text-bgcolor md:px-10"
           >
             Tilmeld
           </button>

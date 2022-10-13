@@ -9,8 +9,8 @@
   </head>
   <body class="bg-bgcolor">
     
-    <header >
-      <div class="navbar bg-navcolor p-4 z-10">
+    <header>
+      <div class="navbar z-10 bg-navcolor p-4">
         <div class="navbar-start">
           <div class="dropdown">
             <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -33,8 +33,18 @@
               tabindex="0"
               class="dropdown-content menu rounded-box menu-compact mt-3 w-52 bg-navcolor p-2 shadow"
             >
-              <li><a href="programoversigt.html" class="font-urbanist active:accent-accentcolor">Program</a></li>
-              <li><a href="forestillinger.html" class="font-urbanist">Forestillinger</a></li>
+              <li>
+                <a
+                  href="programoversigt.html"
+                  class="font-urbanist active:accent-accentcolor"
+                  >Program</a
+                >
+              </li>
+              <li>
+                <a href="forestillinger.html" class="font-urbanist"
+                  >Forestillinger</a
+                >
+              </li>
               <li><a href="events.html" class="font-urbanist">Events</a></li>
               <li><a href="omos.html" class="font-urbanist">Om os</a></li>
               <li tabindex="0">
@@ -52,16 +62,23 @@
                     />
                   </svg>
                 </a>
-                <ul class="p-2 bg-navcolor">
-                  <li><a href="frivillige.html" class="font-urbanist">Frivillige</a></li>
-                  <li><a href="opencall.html" class="font-urbanist">Open Call</a></li>
+                <ul class="bg-navcolor p-2">
+                  <li>
+                    <a href="frivillige.html" class="font-urbanist"
+                      >Frivillig</a
+                    >
+                  </li>
+                  <li>
+                    <a href="opencall.html" class="font-urbanist">Open Call</a>
+                  </li>
                 </ul>
               </li>
             </ul>
           </div>
           <a href="index.html" class="btn btn-ghost text-xl normal-case"
             ><picture class="">
-              <source class="h-auto w-[90px] md:w-[120px]"
+              <source
+                class="h-auto w-[90px] md:w-[120px]"
                 srcset="img/ui/logoblomst.avif"
                 type="image/avif"
               />
@@ -71,14 +88,12 @@
                 alt="event-crowd"
               />
             </picture>
-            </a>
+          </a>
         </div>
         <div class="navbar-center hidden justify-evenly lg:flex">
           <ul class="menu menu-horizontal p-0">
             <li>
-              <a class="font-urbanist" href="programoversigt.html"
-                >Program</a
-              >
+              <a class="font-urbanist" href="programoversigt.html">Program</a>
             </li>
             <li>
               <a class="font-urbanist" href="forestillinger.html"
@@ -102,9 +117,9 @@
                   />
                 </svg>
               </a>
-              <ul class="p-2 bg-navcolor z-10">
+              <ul class="z-10 bg-navcolor p-2">
                 <li>
-                  <a class="font-urbanist" href="frivillige.html">Frivillige</a>
+                  <a class="font-urbanist" href="frivillige.html">Frivillig</a>
                 </li>
                 <li>
                   <a class="font-urbanist" href="opencall.html">Open Call</a>
@@ -115,8 +130,9 @@
         </div>
         <div class="navbar-end">
           <a
-            class="btn rounded-md border-2 border-solid border-accentcolor bg-transparent p-2 md:px-10 py-0 font-custard text-sm md:text-lg text-accentcolor hover:bg-accentcolor hover:border-accentcolor hover:text-navcolor"
-            >KØB BILLETTER</a>
+            class="btn rounded-md border-2 border-solid border-accentcolor bg-transparent p-2 py-0 font-custard text-sm text-accentcolor hover:border-accentcolor hover:bg-accentcolor hover:text-navcolor md:px-10 md:text-lg"
+            >KØB BILLETTER</a
+          >
         </div>
       </div>
     </header>

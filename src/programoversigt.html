@@ -120,9 +120,14 @@
     </header>
 
     <main>
-      <h1 class="flex justify-center pt-11 font-custard text-4xl md:text-7xl">
-        Programoversigt
-      </h1>
+      <div class="relative h-64 overflow-hidden md:h-96">
+        <h1
+          class="hero-text absolute text-center font-custard text-6xl text-bgcolor md:text-9xl"
+        >
+          Programoversigt
+        </h1>
+        <div class="h-80 bg-gradient-to-t from-bgcolor to-accentcolor"></div>
+      </div>
       <div>
         <ul class="flex justify-center flex-wrap items-center mx-5 gap-8 pt-5 md:hidden">
           <a class="border-b-2" href="#TI"><li>Tirsdag</li></a>
@@ -137,7 +142,7 @@
         <!-- TIRSDAG DESKTOP -->
         <article
           id="TI"
-          class="hidden w-fit flex-col gap-4 bg-gradient-to-b from-bgcolor to-accentcolor p-8 sm:flex md:w-[700px]"
+          class="hidden w-fit flex-col gap-4 pb-20 p-8 sm:flex md:w-[700px]"
         >
           <div class="flex justify-center">
             <h1 class="font-custard text-3xl font-semibold md:text-4xl">
@@ -202,10 +207,10 @@
         <!-- TIRSDAG MOBIL -->
         <article
           id="TI"
-          class="flex w-full flex-col gap-4 bg-gradient-to-b from-bgcolor to-accentcolor p-8 sm:hidden md:w-[450px]"
+          class="flex w-full flex-col gap-4 pb-20 p-8 sm:hidden md:w-[450px]"
         >
           <div class="flex justify-center">
-            <h1 class="font-custard text-3xl font-semibold">Tirsdag 2/8</h1>
+            <h1 class="font-custard text-4xl font-semibold">Tirsdag 2/8</h1>
           </div>
 
           <div
@@ -222,7 +227,7 @@
             <div
               class="programvenue pb-2 text-center font-urbanist font-semibold"
             >
-              ZeBu
+              Venue: ZeBu
             </div>
           </div>
 
@@ -238,14 +243,14 @@
             <div
               class="programvenue pb-2 text-center font-urbanist font-semibold"
             >
-              VOX, <br />Teaterhsuet
+            Venue: VOX, <br />Teaterhsuet
             </div>
           </div>
         </article>
         <!-- Onsdag Desktop -->
         <article
           id="TI"
-          class="hidden w-fit flex-col gap-4 bg-gradient-to-b from-bgcolor to-accentcolor p-8 sm:flex md:w-[700px]"
+          class="hidden w-fit flex-col gap-4 pb-20 p-8 sm:flex md:w-[700px]"
         >
           <div class="flex justify-center">
             <h1 class="font-custard text-3xl font-semibold md:text-4xl">
@@ -328,10 +333,10 @@
         <!-- Onsdag mobil -->
         <article
           id="O"
-          class="flex w-full flex-col gap-4 bg-gradient-to-b from-bgcolor to-accentcolor p-8 sm:hidden md:w-[450px]"
+          class="flex w-full flex-col gap-4 pb-20 p-8 sm:hidden md:w-[450px]"
         >
           <div class="flex justify-center">
-            <h1 class="font-custard text-3xl font-semibold">Onsdag 3/8</h1>
+            <h1 class="font-custard text-4xl font-semibold">Onsdag 3/8</h1>
           </div>
 
           <div
@@ -348,7 +353,7 @@
             <div
               class="programvenue pb-2 text-center font-urbanist font-semibold"
             >
-              VOX, <br />
+            Venue: VOX, <br />
               Teaterhsuet
             </div>
           </div>
@@ -367,7 +372,7 @@
             <div
               class="programvenue pb-2 text-center font-urbanist font-semibold"
             >
-              VOX, <br />Teaterhsuet
+            Venue: VOX, <br />Teaterhsuet
             </div>
           </div>
           <div class="flex flex-col justify-evenly gap-5">
@@ -382,7 +387,7 @@
             <div
               class="programvenue pb-2 text-center font-urbanist font-semibold"
             >
-              VOX, <br />
+            Venue: VOX, <br />
               Teaterhsuet
             </div>
           </div>
@@ -390,7 +395,7 @@
         <!-- Torsdag desktop -->
         <article
           id="TI"
-          class="hidden w-fit flex-col gap-4 bg-gradient-to-b from-bgcolor to-accentcolor p-8 sm:flex md:w-[700px]"
+          class="hidden w-fit flex-col gap-4 pb-20 p-8 sm:flex md:w-[700px]"
         >
           <div class="flex justify-center">
             <h1 class="font-custard text-3xl font-semibold md:text-4xl">
@@ -524,10 +529,10 @@
         <!-- torsdag mobil -->
         <article
           id="TO"
-          class="flex w-full flex-col gap-4 bg-gradient-to-b from-bgcolor to-accentcolor p-8 sm:hidden md:w-[450px]"
+          class="flex w-full flex-col gap-4 pb-20 p-8 sm:hidden md:w-[450px]"
         >
           <div class="flex justify-center">
-            <h1 class="font-custard text-3xl font-semibold">Torsdag 4/8</h1>
+            <h1 class="font-custard text-4xl font-semibold">Torsdag 4/8</h1>
           </div>
 
           <div
@@ -544,7 +549,7 @@
             <div
               class="programvenue pb-2 text-center font-urbanist font-semibold"
             >
-              Downunder
+            Venue: Downunder
             </div>
           </div>
 
@@ -562,7 +567,7 @@
             <div
               class="programvenue pb-2 text-center font-urbanist font-semibold"
             >
-              Xenon, <br />Teaterhsuet
+            Venue: Xenon, <br />Teaterhsuet
             </div>
           </div>
           <div
@@ -579,7 +584,7 @@
             <div
               class="programvenue pb-2 text-center font-urbanist font-semibold"
             >
-              Downunder
+            Venue: Downunder
             </div>
           </div>
           <div
@@ -596,7 +601,7 @@
             <div
               class="programvenue pb-2 text-center font-urbanist font-semibold"
             >
-              ZeBU
+            Venue: ZeBU
             </div>
           </div>
           <div
@@ -613,7 +618,7 @@
             <div
               class="programvenue pb-2 text-center font-urbanist font-semibold"
             >
-              Xenon, <br />Teaterhsuet
+            Venue: Xenon, <br />Teaterhsuet
             </div>
           </div>
           <div class="flex flex-col justify-evenly gap-5">
@@ -628,18 +633,18 @@
             <div
               class="programvenue pb-2 text-center font-urbanist font-semibold"
             >
-              Downunder
+            Venue: Downunder
             </div>
           </div>
         </article>
         <!-- Fredag desktop -->
         <article
           id="TI"
-          class="hidden w-fit flex-col gap-4 bg-gradient-to-b from-bgcolor to-accentcolor p-8 sm:flex md:w-[700px]"
+          class="hidden w-fit flex-col gap-4 pb-20 p-8 sm:flex md:w-[700px]"
         >
           <div class="flex justify-center">
             <h1 class="font-custard text-3xl font-semibold md:text-4xl">
-              Fredag 4/8
+              Fredag 5/8
             </h1>
           </div>
 
@@ -786,10 +791,10 @@
         <!-- Fredag mobil -->
         <article
           id="F"
-          class="flex w-full flex-col gap-4 bg-gradient-to-b from-bgcolor to-accentcolor p-8 sm:hidden md:w-[450px]"
+          class="flex w-full flex-col gap-4 pb-20 p-8 sm:hidden md:w-[450px]"
         >
           <div class="flex justify-center">
-            <h1 class="font-custard text-3xl font-semibold">Fresdag 5/8</h1>
+            <h1 class="font-custard text-4xl font-semibold">Fresdag 5/8</h1>
           </div>
 
           <div
@@ -806,7 +811,7 @@
             <div
               class="programvenue pb-2 text-center font-urbanist font-semibold"
             >
-              Downunder
+            Venue: Downunder
             </div>
           </div>
 
@@ -824,7 +829,7 @@
             <div
               class="programvenue pb-2 text-center font-urbanist font-semibold"
             >
-              Xenon, <br />Teaterhsuet
+            Venue: Xenon, <br />Teaterhsuet
             </div>
           </div>
           <div
@@ -841,7 +846,7 @@
             <div
               class="programvenue pb-2 text-center font-urbanist font-semibold"
             >
-              ZeBU
+            Venue: ZeBU
             </div>
           </div>
           <div
@@ -858,7 +863,7 @@
             <div
               class="programvenue pb-2 text-center font-urbanist font-semibold"
             >
-              Downunder
+            Venue: Downunder
             </div>
           </div>
           <div
@@ -875,7 +880,7 @@
             <div
               class="programvenue pb-2 text-center font-urbanist font-semibold"
             >
-              VOX, <br />Teaterhsuet
+            Venue: VOX, <br />Teaterhsuet
             </div>
           </div>
           <div
@@ -892,7 +897,7 @@
             <div
               class="programvenue pb-2 text-center font-urbanist font-semibold"
             >
-              Downunder
+            Venue: Downunder
             </div>
           </div>
           <div class="flex flex-col justify-evenly gap-5">
@@ -907,7 +912,7 @@
             <div
               class="programvenue pb-2 text-center font-urbanist font-semibold"
             >
-              Xenon, <br />Teaterhsuet
+            Venue: Xenon, <br />Teaterhsuet
             </div>
           </div>
         </article>
@@ -915,7 +920,7 @@
         <!-- Lørdag desktop -->
         <article
           id="TI"
-          class="hidden w-fit flex-col gap-4 bg-gradient-to-b from-bgcolor to-accentcolor p-8 sm:flex md:w-[700px]"
+          class="hidden w-fit flex-col gap-4 pb-20 p-8 sm:flex md:w-[700px]"
         >
           <div class="flex justify-center">
             <h1 class="font-custard text-3xl font-semibold md:text-4xl">
@@ -1049,10 +1054,10 @@
         <!-- Lørdag mobil -->
         <article
           id="L"
-          class="flex w-full flex-col gap-4 bg-gradient-to-b from-bgcolor to-accentcolor p-8 sm:hidden md:w-[450px]"
+          class="flex w-full flex-col gap-4 pb-20 p-8 sm:hidden md:w-[450px]"
         >
           <div class="flex justify-center">
-            <h1 class="font-custard text-3xl font-semibold">Lørdag 6/8</h1>
+            <h1 class="font-custard text-4xl font-semibold">Lørdag 6/8</h1>
           </div>
 
           <div
@@ -1069,7 +1074,7 @@
             <div
               class="programvenue pb-2 text-center font-urbanist font-semibold"
             >
-              Xenon, <br />Teaterhsuet
+            Venue: Xenon, <br />Teaterhsuet
             </div>
           </div>
 
@@ -1087,7 +1092,7 @@
             <div
               class="programvenue pb-2 text-center font-urbanist font-semibold"
             >
-              ZeBU
+            Venue: ZeBU
             </div>
           </div>
           <div
@@ -1104,7 +1109,7 @@
             <div
               class="programvenue pb-2 text-center font-urbanist font-semibold"
             >
-              VOX, <br />Teaterhsuet
+            Venue: VOX, <br />Teaterhsuet
             </div>
           </div>
           <div
@@ -1121,7 +1126,7 @@
             <div
               class="programvenue pb-2 text-center font-urbanist font-semibold"
             >
-              Xenon, <br />Teaterhsuet
+            Venue: Xenon, <br />Teaterhsuet
             </div>
           </div>
           <div
@@ -1138,7 +1143,7 @@
             <div
               class="programvenue pb-2 text-center font-urbanist font-semibold"
             >
-              ZeBU
+            Venue: ZeBU
             </div>
           </div>
           <div class="flex flex-col justify-evenly gap-5">
@@ -1153,7 +1158,7 @@
             <div
               class="programvenue pb-2 text-center font-urbanist font-semibold"
             >
-              VOX, <br />Teaterhsuet
+            Venue: VOX, <br />Teaterhsuet
             </div>
           </div>
         </article>
