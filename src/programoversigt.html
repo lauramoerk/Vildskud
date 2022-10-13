@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="bg-bgcolor">
-    <header >
-      <div class="navbar bg-navcolor p-4 z-10">
+    <header>
+      <div class="navbar z-10 bg-navcolor p-4">
         <div class="navbar-start">
           <div class="dropdown">
             <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -31,8 +31,18 @@
               tabindex="0"
               class="dropdown-content menu rounded-box menu-compact mt-3 w-52 bg-navcolor p-2 shadow"
             >
-              <li><a href="programoversigt.html" class="font-urbanist active:accent-accentcolor">Program</a></li>
-              <li><a href="forestillinger.html" class="font-urbanist">Forestillinger</a></li>
+              <li>
+                <a
+                  href="programoversigt.html"
+                  class="font-urbanist active:accent-accentcolor"
+                  >Program</a
+                >
+              </li>
+              <li>
+                <a href="forestillinger.html" class="font-urbanist"
+                  >Forestillinger</a
+                >
+              </li>
               <li><a href="events.html" class="font-urbanist">Events</a></li>
               <li><a href="omos.html" class="font-urbanist">Om os</a></li>
               <li tabindex="0">
@@ -50,16 +60,23 @@
                     />
                   </svg>
                 </a>
-                <ul class="p-2 bg-navcolor">
-                  <li><a href="frivillige.html" class="font-urbanist">Frivillige</a></li>
-                  <li><a href="opencall.html" class="font-urbanist">Open Call</a></li>
+                <ul class="bg-navcolor p-2">
+                  <li>
+                    <a href="frivillige.html" class="font-urbanist"
+                      >Frivillige</a
+                    >
+                  </li>
+                  <li>
+                    <a href="opencall.html" class="font-urbanist">Open Call</a>
+                  </li>
                 </ul>
               </li>
             </ul>
           </div>
           <a href="index.html" class="btn btn-ghost text-xl normal-case"
             ><picture class="">
-              <source class="h-auto w-[90px] md:w-[120px]"
+              <source
+                class="h-auto w-[90px] md:w-[120px]"
                 srcset="img/ui/logoblomst.avif"
                 type="image/avif"
               />
@@ -69,14 +86,12 @@
                 alt="event-crowd"
               />
             </picture>
-            </a>
+          </a>
         </div>
         <div class="navbar-center hidden justify-evenly lg:flex">
           <ul class="menu menu-horizontal p-0">
             <li>
-              <a class="font-urbanist" href="programoversigt.html"
-                >Program</a
-              >
+              <a class="font-urbanist" href="programoversigt.html">Program</a>
             </li>
             <li>
               <a class="font-urbanist" href="forestillinger.html"
@@ -100,7 +115,7 @@
                   />
                 </svg>
               </a>
-              <ul class="p-2 bg-navcolor z-10">
+              <ul class="z-10 bg-navcolor p-2">
                 <li>
                   <a class="font-urbanist" href="frivillige.html">Frivillige</a>
                 </li>
@@ -113,8 +128,9 @@
         </div>
         <div class="navbar-end">
           <a
-            class="btn rounded-md border-2 border-solid border-accentcolor bg-transparent p-2 md:px-10 py-0 font-custard text-sm md:text-lg text-accentcolor hover:bg-accentcolor hover:border-accentcolor hover:text-navcolor"
-            >KØB BILLETTER</a>
+            class="btn rounded-md border-2 border-solid border-accentcolor bg-transparent p-2 py-0 font-custard text-sm text-accentcolor hover:border-accentcolor hover:bg-accentcolor hover:text-navcolor md:px-10 md:text-lg"
+            >KØB BILLETTER</a
+          >
         </div>
       </div>
     </header>
@@ -129,7 +145,9 @@
         <div class="h-80 bg-gradient-to-t from-bgcolor to-accentcolor"></div>
       </div>
       <div>
-        <ul class="flex justify-center flex-wrap items-center mx-5 gap-8 pt-5 md:hidden">
+        <ul
+          class="mx-5 flex flex-wrap items-center justify-center gap-8 pt-5 md:hidden"
+        >
           <a class="border-b-2" href="#TI"><li>Tirsdag</li></a>
           <a class="border-b-2" href="#O"><li>Onsdag</li></a>
           <a class="border-b-2" href="#TO"><li>Torsdag</li></a>
@@ -142,7 +160,7 @@
         <!-- TIRSDAG DESKTOP -->
         <article
           id="TI"
-          class="hidden w-fit flex-col gap-4 pb-20 p-8 sm:flex md:w-[700px]"
+          class="hidden w-fit flex-col gap-4 p-8 pb-20 sm:flex md:w-[700px]"
         >
           <div class="flex justify-center">
             <h1 class="font-custard text-3xl font-semibold md:text-4xl">
@@ -154,17 +172,17 @@
             class="grid grid-cols-3 justify-evenly gap-5 border-b-[1px] border-solid border-accentcolor"
           >
             <div
-              class="programvenue pb-2 text-center font-custard text-2xl md:text-3xl font-semibold"
+              class="programvenue pb-2 text-center font-custard text-2xl font-semibold md:text-3xl"
             >
               Venue
             </div>
             <div
-              class="programtidspunkt pb-2 text-center font-custard text-2xl md:text-3xl font-semibold"
+              class="programtidspunkt pb-2 text-center font-custard text-2xl font-semibold md:text-3xl"
             >
               Tidspunkt
             </div>
             <div
-              class="programforestilling pb-2 text-center font-custard text-2xl md:text-3xl font-semibold"
+              class="programforestilling pb-2 text-center font-custard text-2xl font-semibold md:text-3xl"
             >
               Forestilling
             </div>
@@ -207,7 +225,7 @@
         <!-- TIRSDAG MOBIL -->
         <article
           id="TI"
-          class="flex w-full flex-col gap-4 pb-20 p-8 sm:hidden md:w-[450px]"
+          class="flex w-full flex-col gap-4 p-8 pb-20 sm:hidden md:w-[450px]"
         >
           <div class="flex justify-center">
             <h1 class="font-custard text-4xl font-semibold">Tirsdag 2/8</h1>
@@ -243,14 +261,14 @@
             <div
               class="programvenue pb-2 text-center font-urbanist font-semibold"
             >
-            Venue: VOX, <br />Teaterhsuet
+              Venue: VOX, <br />Teaterhsuet
             </div>
           </div>
         </article>
         <!-- Onsdag Desktop -->
         <article
           id="TI"
-          class="hidden w-fit flex-col gap-4 pb-20 p-8 sm:flex md:w-[700px]"
+          class="hidden w-fit flex-col gap-4 p-8 pb-20 sm:flex md:w-[700px]"
         >
           <div class="flex justify-center">
             <h1 class="font-custard text-3xl font-semibold md:text-4xl">
@@ -262,17 +280,17 @@
             class="grid grid-cols-3 justify-evenly gap-5 border-b-[1px] border-solid border-accentcolor"
           >
             <div
-              class="programvenue pb-2 text-center font-custard text-2xl md:text-3xl font-semibold"
+              class="programvenue pb-2 text-center font-custard text-2xl font-semibold md:text-3xl"
             >
               Venue
             </div>
             <div
-              class="programtidspunkt pb-2 text-center font-custard text-2xl md:text-3xl font-semibold"
+              class="programtidspunkt pb-2 text-center font-custard text-2xl font-semibold md:text-3xl"
             >
               Tidspunkt
             </div>
             <div
-              class="programforestilling pb-2 text-center font-custard text-2xl md:text-3xl font-semibold"
+              class="programforestilling pb-2 text-center font-custard text-2xl font-semibold md:text-3xl"
             >
               Forestilling
             </div>
@@ -333,7 +351,7 @@
         <!-- Onsdag mobil -->
         <article
           id="O"
-          class="flex w-full flex-col gap-4 pb-20 p-8 sm:hidden md:w-[450px]"
+          class="flex w-full flex-col gap-4 p-8 pb-20 sm:hidden md:w-[450px]"
         >
           <div class="flex justify-center">
             <h1 class="font-custard text-4xl font-semibold">Onsdag 3/8</h1>
@@ -353,7 +371,7 @@
             <div
               class="programvenue pb-2 text-center font-urbanist font-semibold"
             >
-            Venue: VOX, <br />
+              Venue: VOX, <br />
               Teaterhsuet
             </div>
           </div>
@@ -372,7 +390,7 @@
             <div
               class="programvenue pb-2 text-center font-urbanist font-semibold"
             >
-            Venue: VOX, <br />Teaterhsuet
+              Venue: VOX, <br />Teaterhsuet
             </div>
           </div>
           <div class="flex flex-col justify-evenly gap-5">
@@ -387,7 +405,7 @@
             <div
               class="programvenue pb-2 text-center font-urbanist font-semibold"
             >
-            Venue: VOX, <br />
+              Venue: VOX, <br />
               Teaterhsuet
             </div>
           </div>
@@ -395,7 +413,7 @@
         <!-- Torsdag desktop -->
         <article
           id="TI"
-          class="hidden w-fit flex-col gap-4 pb-20 p-8 sm:flex md:w-[700px]"
+          class="hidden w-fit flex-col gap-4 p-8 pb-20 sm:flex md:w-[700px]"
         >
           <div class="flex justify-center">
             <h1 class="font-custard text-3xl font-semibold md:text-4xl">
@@ -407,17 +425,17 @@
             class="grid grid-cols-3 justify-evenly gap-5 border-b-[1px] border-solid border-accentcolor"
           >
             <div
-              class="programvenue pb-2 text-center font-custard text-2xl md:text-3xl font-semibold"
+              class="programvenue pb-2 text-center font-custard text-2xl font-semibold md:text-3xl"
             >
               Venue
             </div>
             <div
-              class="programtidspunkt pb-2 text-center font-custard text-2xl md:text-3xl font-semibold"
+              class="programtidspunkt pb-2 text-center font-custard text-2xl font-semibold md:text-3xl"
             >
               Tidspunkt
             </div>
             <div
-              class="programforestilling pb-2 text-center font-custard text-2xl md:text-3xl font-semibold"
+              class="programforestilling pb-2 text-center font-custard text-2xl font-semibold md:text-3xl"
             >
               Forestilling
             </div>
@@ -529,7 +547,7 @@
         <!-- torsdag mobil -->
         <article
           id="TO"
-          class="flex w-full flex-col gap-4 pb-20 p-8 sm:hidden md:w-[450px]"
+          class="flex w-full flex-col gap-4 p-8 pb-20 sm:hidden md:w-[450px]"
         >
           <div class="flex justify-center">
             <h1 class="font-custard text-4xl font-semibold">Torsdag 4/8</h1>
@@ -549,7 +567,7 @@
             <div
               class="programvenue pb-2 text-center font-urbanist font-semibold"
             >
-            Venue: Downunder
+              Venue: Downunder
             </div>
           </div>
 
@@ -567,7 +585,7 @@
             <div
               class="programvenue pb-2 text-center font-urbanist font-semibold"
             >
-            Venue: Xenon, <br />Teaterhsuet
+              Venue: Xenon, <br />Teaterhsuet
             </div>
           </div>
           <div
@@ -584,7 +602,7 @@
             <div
               class="programvenue pb-2 text-center font-urbanist font-semibold"
             >
-            Venue: Downunder
+              Venue: Downunder
             </div>
           </div>
           <div
@@ -601,7 +619,7 @@
             <div
               class="programvenue pb-2 text-center font-urbanist font-semibold"
             >
-            Venue: ZeBU
+              Venue: ZeBU
             </div>
           </div>
           <div
@@ -618,7 +636,7 @@
             <div
               class="programvenue pb-2 text-center font-urbanist font-semibold"
             >
-            Venue: Xenon, <br />Teaterhsuet
+              Venue: Xenon, <br />Teaterhsuet
             </div>
           </div>
           <div class="flex flex-col justify-evenly gap-5">
@@ -633,14 +651,14 @@
             <div
               class="programvenue pb-2 text-center font-urbanist font-semibold"
             >
-            Venue: Downunder
+              Venue: Downunder
             </div>
           </div>
         </article>
         <!-- Fredag desktop -->
         <article
           id="TI"
-          class="hidden w-fit flex-col gap-4 pb-20 p-8 sm:flex md:w-[700px]"
+          class="hidden w-fit flex-col gap-4 p-8 pb-20 sm:flex md:w-[700px]"
         >
           <div class="flex justify-center">
             <h1 class="font-custard text-3xl font-semibold md:text-4xl">
@@ -652,17 +670,17 @@
             class="grid grid-cols-3 justify-evenly gap-5 border-b-[1px] border-solid border-accentcolor"
           >
             <div
-              class="programvenue pb-2 text-center font-custard text-2xl md:text-3xl font-semibold"
+              class="programvenue pb-2 text-center font-custard text-2xl font-semibold md:text-3xl"
             >
               Venue
             </div>
             <div
-              class="programtidspunkt pb-2 text-center font-custard text-2xl md:text-3xl font-semibold"
+              class="programtidspunkt pb-2 text-center font-custard text-2xl font-semibold md:text-3xl"
             >
               Tidspunkt
             </div>
             <div
-              class="programforestilling pb-2 text-center font-custard text-2xl md:text-3xl font-semibold"
+              class="programforestilling pb-2 text-center font-custard text-2xl font-semibold md:text-3xl"
             >
               Forestilling
             </div>
@@ -791,7 +809,7 @@
         <!-- Fredag mobil -->
         <article
           id="F"
-          class="flex w-full flex-col gap-4 pb-20 p-8 sm:hidden md:w-[450px]"
+          class="flex w-full flex-col gap-4 p-8 pb-20 sm:hidden md:w-[450px]"
         >
           <div class="flex justify-center">
             <h1 class="font-custard text-4xl font-semibold">Fresdag 5/8</h1>
@@ -811,7 +829,7 @@
             <div
               class="programvenue pb-2 text-center font-urbanist font-semibold"
             >
-            Venue: Downunder
+              Venue: Downunder
             </div>
           </div>
 
@@ -829,7 +847,7 @@
             <div
               class="programvenue pb-2 text-center font-urbanist font-semibold"
             >
-            Venue: Xenon, <br />Teaterhsuet
+              Venue: Xenon, <br />Teaterhsuet
             </div>
           </div>
           <div
@@ -846,7 +864,7 @@
             <div
               class="programvenue pb-2 text-center font-urbanist font-semibold"
             >
-            Venue: ZeBU
+              Venue: ZeBU
             </div>
           </div>
           <div
@@ -863,7 +881,7 @@
             <div
               class="programvenue pb-2 text-center font-urbanist font-semibold"
             >
-            Venue: Downunder
+              Venue: Downunder
             </div>
           </div>
           <div
@@ -880,7 +898,7 @@
             <div
               class="programvenue pb-2 text-center font-urbanist font-semibold"
             >
-            Venue: VOX, <br />Teaterhsuet
+              Venue: VOX, <br />Teaterhsuet
             </div>
           </div>
           <div
@@ -897,7 +915,7 @@
             <div
               class="programvenue pb-2 text-center font-urbanist font-semibold"
             >
-            Venue: Downunder
+              Venue: Downunder
             </div>
           </div>
           <div class="flex flex-col justify-evenly gap-5">
@@ -912,7 +930,7 @@
             <div
               class="programvenue pb-2 text-center font-urbanist font-semibold"
             >
-            Venue: Xenon, <br />Teaterhsuet
+              Venue: Xenon, <br />Teaterhsuet
             </div>
           </div>
         </article>
@@ -920,7 +938,7 @@
         <!-- Lørdag desktop -->
         <article
           id="TI"
-          class="hidden w-fit flex-col gap-4 pb-20 p-8 sm:flex md:w-[700px]"
+          class="hidden w-fit flex-col gap-4 p-8 pb-20 sm:flex md:w-[700px]"
         >
           <div class="flex justify-center">
             <h1 class="font-custard text-3xl font-semibold md:text-4xl">
@@ -932,17 +950,17 @@
             class="grid grid-cols-3 justify-evenly gap-5 border-b-[1px] border-solid border-accentcolor"
           >
             <div
-              class="programvenue pb-2 text-center font-custard text-2xl md:text-3xl font-semibold"
+              class="programvenue pb-2 text-center font-custard text-2xl font-semibold md:text-3xl"
             >
               Venue
             </div>
             <div
-              class="programtidspunkt pb-2 text-center font-custard text-2xl md:text-3xl font-semibold"
+              class="programtidspunkt pb-2 text-center font-custard text-2xl font-semibold md:text-3xl"
             >
               Tidspunkt
             </div>
             <div
-              class="programforestilling pb-2 text-center font-custard text-2xl md:text-3xl font-semibold"
+              class="programforestilling pb-2 text-center font-custard text-2xl font-semibold md:text-3xl"
             >
               Forestilling
             </div>
@@ -1033,9 +1051,7 @@
               Det levende rum
             </div>
           </div>
-          <div
-            class="grid grid-cols-3 items-center"
-          >
+          <div class="grid grid-cols-3 items-center">
             <div
               class="programvenue pb-2 text-center font-urbanist font-semibold"
             >
@@ -1054,7 +1070,7 @@
         <!-- Lørdag mobil -->
         <article
           id="L"
-          class="flex w-full flex-col gap-4 pb-20 p-8 sm:hidden md:w-[450px]"
+          class="flex w-full flex-col gap-4 p-8 pb-20 sm:hidden md:w-[450px]"
         >
           <div class="flex justify-center">
             <h1 class="font-custard text-4xl font-semibold">Lørdag 6/8</h1>
@@ -1074,7 +1090,7 @@
             <div
               class="programvenue pb-2 text-center font-urbanist font-semibold"
             >
-            Venue: Xenon, <br />Teaterhsuet
+              Venue: Xenon, <br />Teaterhsuet
             </div>
           </div>
 
@@ -1092,7 +1108,7 @@
             <div
               class="programvenue pb-2 text-center font-urbanist font-semibold"
             >
-            Venue: ZeBU
+              Venue: ZeBU
             </div>
           </div>
           <div
@@ -1109,7 +1125,7 @@
             <div
               class="programvenue pb-2 text-center font-urbanist font-semibold"
             >
-            Venue: VOX, <br />Teaterhsuet
+              Venue: VOX, <br />Teaterhsuet
             </div>
           </div>
           <div
@@ -1126,7 +1142,7 @@
             <div
               class="programvenue pb-2 text-center font-urbanist font-semibold"
             >
-            Venue: Xenon, <br />Teaterhsuet
+              Venue: Xenon, <br />Teaterhsuet
             </div>
           </div>
           <div
@@ -1143,7 +1159,7 @@
             <div
               class="programvenue pb-2 text-center font-urbanist font-semibold"
             >
-            Venue: ZeBU
+              Venue: ZeBU
             </div>
           </div>
           <div class="flex flex-col justify-evenly gap-5">
@@ -1158,19 +1174,38 @@
             <div
               class="programvenue pb-2 text-center font-urbanist font-semibold"
             >
-            Venue: VOX, <br />Teaterhsuet
+              Venue: VOX, <br />Teaterhsuet
             </div>
           </div>
         </article>
       </section>
+      <div class="flex flex-col items-center">
+        <h2 class="font-custard text-3xl font-semibold md:text-4xl">
+          Festivalens lokationer
+        </h2>
+        <picture class=" flex justify-center relative pt-5">
+          <source
+            class="h-auto"
+            srcset="img/avif/kort.avif"
+            type="image/avif"
+          />
+          <img
+            class="h-auto w-4/5 md:w-1/3"
+            src="img/webp/kort.webp"
+            alt="kort"
+          />
+        </picture>
 
+      </div>
       <div class="flex flex-col items-center justify-center gap-2 pb-11">
         <button
-          class="mt-6 self-center rounded-md bg-gradient-to-b from-[#CF2E2E] to-[#BF374B] py-1 px-4 font-custard text-xl uppercase text-bgcolor md:mt-10 md:w-80 md:p-4 md:text-2xl"
+          class="mt-6 self-center rounded-md w-fit bg-gradient-to-b from-[#CF2E2E] to-[#BF374B] py-1 px-4 font-custard text-xl uppercase text-bgcolor md:mt-10  md:text-2xl"
         >
           Køb billetter
         </button>
-        <a href="index.html#billetguide" class="font-urbanist border-b-2 pt-2 font-semibold"
+        <a
+          href="index.html#billetguide"
+          class="border-b-2 pt-2 font-urbanist text-base sm:text-sm font-semibold"
           >Se billetguide</a
         >
       </div>
@@ -1181,11 +1216,19 @@
         </div>
         <div>
           <h3 class="font-custard text-xl text-black">NAVIGATION</h3>
-          <a href="programoversigt.html" class="link link-hover font-urbanist">Program</a>
-          <a href="forestillinger.html" class="link link-hover font-urbanist">Forestillinger</a>
+          <a href="programoversigt.html" class="link link-hover font-urbanist"
+            >Program</a
+          >
+          <a href="forestillinger.html" class="link link-hover font-urbanist"
+            >Forestillinger</a
+          >
           <a href="events.html" class="link link-hover font-urbanist">Events</a>
-          <a href="frivillige.html" class="link link-hover font-urbanist">Frivillig</a>
-          <a href="opencall.html" class="link link-hover font-urbanist">Open Call</a>
+          <a href="frivillige.html" class="link link-hover font-urbanist"
+            >Frivillig</a
+          >
+          <a href="opencall.html" class="link link-hover font-urbanist"
+            >Open Call</a
+          >
         </div>
         <div>
           <h3 class="font-custard text-xl text-black">VILDSKUD</h3>
@@ -1212,7 +1255,9 @@
           <h3 class="font-custard text-xl text-black">BETINGELSER</h3>
           <a class="link link-hover font-urbanist">Cookies</a>
           <a class="link link-hover font-urbanist">Privatpolitik</a>
-          <a href="sitemap.html" class="link link-hover font-urbanist">Sitemap</a>
+          <a href="sitemap.html" class="link link-hover font-urbanist"
+            >Sitemap</a
+          >
         </div>
       </footer>
     </main>
