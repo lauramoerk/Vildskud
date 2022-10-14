@@ -10,11 +10,11 @@ module.exports = {
       'white':"#FFFFFF",
       'black':"#000",
     },
-    fontFamily:{
-      custard: "'custard',sans-serif",
-      urbanist: "'Urbanist', sans-serif",},
-    extend: {
 
+    extend: {
+      fontFamily:{
+        custard: "'custard',sans-serif",
+        urbanist: "'Urbanist', sans-serif",},
     },
   },
   plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms"), require("daisyui")], 
