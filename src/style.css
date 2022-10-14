@@ -5,7 +5,9 @@
 @layer base{
 
   
-
+.hero-container{
+  position: relative;
+}
 
     .hero-text {
         text-align: center;
